@@ -1,12 +1,21 @@
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+body {
+    /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
 .header {
-  height: 80px;
+  height: 70px;
   background: blue;
   position: relative;
   z-index: 20;
+  text-align: center;
 }
 
 .navigation {
-  /* critical sizing and position styles */
   width: 100%;
   height: 100%;
   position: fixed;
@@ -15,22 +24,18 @@
   bottom: 0;
   left: 0;
   z-index: 0;
-  padding-top: 80px;
-  /* non-critical appearance styles */
+  padding-top: 70px;
   list-style: none;
   background: #111;
 }
 
-/* Navigation Menu - List items */
 .nav-item {
-  /* non-critical appearance styles */
   width: 200px;
   border-top: 1px solid #111;
   border-bottom: 1px solid #000;
 }
 
 .nav-item a {
-  /* non-critical appearance styles */
   display: block;
   padding: 1em;
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
@@ -45,37 +50,48 @@
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
 }
 
-/* Site Wrapper - Everything that isn't navigation */
-.site-wrap {
-  /* Critical position and size styles */
-  min-height: 100%;
-  min-width: 100%;
-  background-color: white; /* Needs a background or else the nav will show through */
+.wrapper {
+  height: 100%;
+  width: 100%;
   position: relative;
   top: 0;
   bottom: 100%;
   left: 0;
-  z-index: 1;
-
-  /* non-critical apperance styles */
-  padding: 4em;
-
+  z-index: 10;
 }
 
-/* Nav Trigger */
+.site-wrap, .landing {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 10;
+  padding: 4em;
+}
+
+.landing {
+  background-color: #BF2786;
+}
+
+.landing-header {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
 .nav-trigger {
-  /* critical styles - hide the checkbox input */
   position: absolute;
   clip: rect(0, 0, 0, 0);
 }
 
+/* Hamburger Icon */
 label[for="nav-trigger"] {
-  /* critical positioning styles */
   position: fixed;
   left: 15px; top: 15px;
   z-index: 30;
-
-  /* non-critical apperance styles */
   height: 30px;
   width: 30px;
   cursor: pointer;
@@ -84,12 +100,8 @@ label[for="nav-trigger"] {
 }
 
 /* Make the Magic Happen */
-.nav-trigger + label, .site-wrap {
+.nav-trigger + label, .wrapper {
   transition: left 0.2s;
-}
-
-.nav-trigger + label, .header {
-  transition: left 0.5s;
 }
 
 .nav-trigger:checked + label {
@@ -100,16 +112,67 @@ label[for="nav-trigger"] {
   left: 215px;
 }*/
 
-.nav-trigger:checked ~ .site-wrap,
-.nav-trigger:checked ~ .header {
+.nav-trigger:checked ~ .wrapper {
   left: 200px;
 }
 
-body {
-    /* Without this, the body has excess horizontal scroll when the menu is open */
-  overflow-x: hidden;
+.login-container {
+  background-color: #FFF;
+  width: 90%;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Micro reset */
-*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
-html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 95%;
+}
+
+.field-wrapper {
+  position: relative;
+}
+
+.login-container input {
+  width: 90%;
+  margin: 10px auto;
+  height: 30px;
+  color: #384044;
+  font-size: 1em;
+  line-height: 1.6em;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  outline: 0;
+  margin: 1rem;
+  padding: 0 0 1em 0;
+  text-indent: 0.5em;
+}
+
+label {
+  position: absolute;
+  top: 3px;
+  left: 23px;
+  font-size: 11px;
+  color: #aaa;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  opacity: 0;
+  font-weight: bold;
+}
+
+label.on {
+  color:#4481C4;
+}
+
+label.show {
+  top: -1px;
+  opacity: 1;
+}
+
+.small {
+  font-size: 12px;
+}

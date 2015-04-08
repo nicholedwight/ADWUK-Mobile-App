@@ -1,31 +1,30 @@
 <?php include('inc/header.php'); ?>
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-  <label for="nav-trigger"></label>
+  <div id="main" role="main" class="site-wrap landing">
+    <div class="login-container">
+      <div class="landing-header">
+        <img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK">
+      </div>
 
-<header class="header">
-  <h1>TEST HEADER</h1>
-</header>
+      <h2>Sign In</h2>
+      <form method="post" action="home.php" id="login" class="login-form">
+        <div class="field-wrapper">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="field-wrapper">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password">
+        </div>
 
-<nav id="nav" role="navigation">
-  <ul class="navigation">
-    <li class="nav-item"><a href="#">Home</a></li>
-    <li class="nav-item"><a href="#">Portfolio</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
-    <li class="nav-item"><a href="#">Blog</a></li>
-    <li class="nav-item"><a href="#">Contact</a></li>
-  </ul>
-</nav>
+        <button type="submit" class="btn">Login</button>
+        <p class="small">Don't have an account?
+          <a href="registration.php">
+            <span>Register Now</span>.
+          </a>
+        </p>
+        <p class="small"><a href="forgotten.php">Forgot your password?</a></p>
+      </form>
+    </div>
+  </div>
 
-<div id="main" role="main" class="site-wrap">
-
-</div>
-
-<footer>
-
-</footer>
-
-
-<script src="./assets/js/main.js"></script>
-
-</body>
-</html>
+<?php include('inc/footer.php'); ?>
