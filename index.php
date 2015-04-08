@@ -16,15 +16,24 @@
           <input type="password" id="password" name="password" placeholder="Password">
         </div>
 
-        <button type="submit" class="btn">Login</button>
+        <a href="#" class="submit btn">Login</a>
+
+        <div class="email-confirmation">
+          <p>Does your email look right?</p>
+          <p><?php echo $POST['email'];?></p>
+          <a class="cancel btn">No</a>
+          <button type="submit" class="btn">Yes, keep going!</button>
+        </div>
         <p class="small">Don't have an account?
           <a href="registration.php">
             <span>Register Now</span>.
           </a>
         </p>
         <p class="small"><a href="forgotten.php">Forgot your password?</a></p>
+
       </form>
     </div>
+
   </div>
 
 <?php include('inc/footer.php'); ?>

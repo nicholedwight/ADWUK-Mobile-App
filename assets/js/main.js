@@ -16,4 +16,17 @@ $(document).ready(function () {
   }).on("blur",function(){
       $(this).prev("label").removeClass(onClass);
   }).trigger("checkval");
+
+  $('.submit').click(function() {
+    $('.email-confirmation').css({
+        'display': 'block'
+    });
+  });
+
+  $('.cancel').click(function() {
+    $('.email-confirmation').css({
+        'display': 'none'
+    });
+  });
+
 });

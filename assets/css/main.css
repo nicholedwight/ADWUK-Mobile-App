@@ -9,10 +9,11 @@ body {
 
 .header {
   height: 70px;
-  background: blue;
+  background: #515050;
   position: relative;
   z-index: 20;
   text-align: center;
+  color: #FFF;
 }
 
 .navigation {
@@ -131,6 +132,13 @@ label[for="nav-trigger"] {
   margin: 0 auto;
   padding-top: 20px;
   width: 95%;
+}
+
+.email-confirmation {
+  display: none;
+  z-index: 50;
+  width: 200px;
+  height: 250px;
 }
 
 .field-wrapper {

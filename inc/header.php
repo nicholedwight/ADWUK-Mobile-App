@@ -8,3 +8,12 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
+  <nav role="navigation">
+    <ul class="navigation">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">Portfolio</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Blog</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
