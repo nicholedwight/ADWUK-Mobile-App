@@ -3,7 +3,7 @@
   <label for="nav-trigger"></label>
 <div class="wrapper">
   <header class="header">
-    <h1>TEST HEADER</h1>
+    <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
   </header>
 
   <div id="main" role="main" class="site-wrap">

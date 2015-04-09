@@ -10,10 +10,13 @@
 <body>
   <nav role="navigation">
     <ul class="navigation">
-      <li class="nav-item"><a href="#">Home</a></li>
-      <li class="nav-item"><a href="#">Portfolio</a></li>
-      <li class="nav-item"><a href="#">About</a></li>
-      <li class="nav-item"><a href="#">Blog</a></li>
-      <li class="nav-item"><a href="#">Contact</a></li>
+      <li class="nav-item"><a href="edit.php">My Profile<p>Edit Profile</p></a></li>
+      <li class="nav-item"><a href="home.php">Home</a></li>
+      <li class="nav-item"><a href="#">Forum</a></li>
+      <li class="nav-item"><a href="#">Mentor</a></li>
+      <li class="nav-item"><a href="#">Messages</a></li>
+      <li class="nav-item"><a href="accessibility.php">Accessibility</a></li>
+      <li class="nav-item"><a href="#">Contact ADWUK</a></li>
+      <li class="nav-item"><a href="index.php">Sign Out</a></li>
     </ul>
   </nav>

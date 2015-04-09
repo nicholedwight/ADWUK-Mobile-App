@@ -9,21 +9,16 @@
       <form method="post" action="home.php" id="login" class="login-form">
         <div class="field-wrapper">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="email" id="email" name="email" placeholder="Email" class="text-input">
         </div>
         <div class="field-wrapper">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Password">
+          <input type="password" id="password" name="password" placeholder="Password" class="text-input">
         </div>
 
-        <a href="#" class="submit btn">Login</a>
+        <button type="submit" class="btn submit">Login</button>
 
-        <div class="email-confirmation">
-          <p>Does your email look right?</p>
-          <p><?php echo $POST['email'];?></p>
-          <a class="cancel btn">No</a>
-          <button type="submit" class="btn">Yes, keep going!</button>
-        </div>
+
         <p class="small">Don't have an account?
           <a href="registration.php">
             <span>Register Now</span>.
