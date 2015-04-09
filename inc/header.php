@@ -10,9 +10,13 @@
 <body>
   <nav role="navigation">
     <ul class="navigation">
-      <li class="nav-item"><a href="edit.php">My Profile<p>Edit Profile</p></a></li>
+      <li class="nav-item">
+        <a href="edit.php">My Profile
+          <p class="small">Edit Profile</p>
+        </a>
+      </li>
       <li class="nav-item"><a href="home.php">Home</a></li>
-      <li class="nav-item"><a href="#">Forum</a></li>
+      <li class="nav-item"><a href="forum.php">Forum</a></li>
       <li class="nav-item"><a href="#">Mentor</a></li>
       <li class="nav-item"><a href="#">Messages</a></li>
       <li class="nav-item"><a href="accessibility.php">Accessibility</a></li>

@@ -53,7 +53,7 @@ function highlightOn() {
 
     $('div span').hover(
         function() {
-            $(this).css('background-color','#ffff66');
+            $(this).css('background-color','#FC0');
         },
         function() {
             $(this).css('background-color','');
