@@ -20,8 +20,10 @@ p {
   list-style: none;
 }
 
-.forum-categories {
-  margin-top: 20px;
+.forum-categories,
+.profile_settings {
+  margin: 20px auto;
+  max-width: 550px;
 }
 
 .bullets {
@@ -31,6 +33,7 @@ p {
 .content-banner {
   background-color: #F9EC68;
   padding: 1em;
+  padding-top: 75px;
 }
 
 .content-banner h1 {
@@ -54,7 +57,8 @@ p {
 .header {
   height: 70px;
   background: #515050;
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 20;
   text-align: center;
   color: #FFF;
@@ -143,7 +147,7 @@ p {
 
 /* Hamburger Icon */
 label[for="nav-trigger"] {
-  position: absolute;
+  position: fixed;
   left: 15px; top: 15px;
   z-index: 30;
   height: 30px;
@@ -153,7 +157,7 @@ label[for="nav-trigger"] {
   background-size: contain;
 }
 
-/* Make the Magic Happen */
+/* Make the Navigation Magic Happen */
 .nav-trigger + label, .wrapper {
   transition: left 0.2s;
 }
@@ -161,10 +165,6 @@ label[for="nav-trigger"] {
 .nav-trigger:checked + label {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='white'/><rect y='24' width='30' height='6' fill='white'/><rect y='12' width='30' height='6' fill='white'/></svg>");
 }
-
-/*.nav-trigger:checked + label {
-  left: 215px;
-}*/
 
 .nav-trigger:checked ~ .wrapper {
   left: 200px;
@@ -277,6 +277,16 @@ label.show {
 
 .small {
   font-size: 12px;
+}
+
+.image-container {
+  width: 53px;
+  height: 52px;
+  border: 1px solid grey;
+}
+
+.profile-image {
+  max-width: 50px;
 }
 
 .colour-pref {
@@ -395,10 +405,21 @@ label.show {
   margin-left: 9px;
 }
 
+.arrow-left:before {
+  content: '\2039';
+  font-size: 25px;
+  color: #000;
+}
+
+.arrow-right:before {
+  content: '\203A';
+  font-size: 25px;
+  color: #000;
+}
+
 .pagination ul li:last-child {
   border-radius: 0 6px 6px 0;
   margin-right: 0;
-  content: '\2192';
 }
 
 .pagination ul li > a {
