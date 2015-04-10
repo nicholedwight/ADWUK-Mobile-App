@@ -1,3 +1,7 @@
+<?php
+  $date = date('D M d, Y');
+  $yesterday = date("D M d, Y", time() - 60 * 60 * 24);
+;?>
 <!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -18,7 +22,7 @@
       <li class="nav-item"><a href="home.php">Home</a></li>
       <li class="nav-item"><a href="forum.php">Forum</a></li>
       <li class="nav-item"><a href="#">Mentor</a></li>
-      <li class="nav-item"><a href="#">Messages</a></li>
+      <li class="nav-item"><a href="messages.php">Messages</a></li>
       <li class="nav-item"><a href="accessibility.php">Accessibility</a></li>
       <li class="nav-item"><a href="#">Contact ADWUK</a></li>
       <li class="nav-item"><a href="index.php">Sign Out</a></li>

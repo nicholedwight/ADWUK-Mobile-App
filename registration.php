@@ -18,9 +18,23 @@
           <label for="username">Username</label>
           <input type="text" id="username" name="username" placeholder="Username" class="text-input">
         </div>
+          <p>Do you have an impairment?</p>
+          <label>
+            <input type="radio" name="disability">
+            <span>Yes</span>
+          </label>
+
+          <label>
+            <input type="radio" name="disability">
+            <span>No</span>
+          </label>
+
+          <p>If you do have an impairment, tell us a little about it so we can try to match you with your perfect mentor.</p>
+          <label for="about-impairment">Describe your impairment</label>
+          <textarea id="about-impairment" placeholder="Describe your impairment"></textarea>
         <div class="field-wrapper">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" class="text-input">
+          <input type="email" id="email" name="email" rows="10" cols="40" placeholder="Email" class="text-input">
         </div>
         <div class="field-wrapper">
           <label for="password">Password</label>
