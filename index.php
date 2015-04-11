@@ -6,7 +6,7 @@
       </div>
 
       <h2>Sign In</h2>
-      <form method="post" action="home.php" id="login" class="login-form">
+      <form method="get" action="home.php" id="login" class="login-form">
         <div class="field-wrapper">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Email" class="text-input">
@@ -31,4 +31,5 @@
 
   </div>
 
-<?php include('inc/footer.php'); ?>
+<?php
+include('inc/footer.php'); ?>

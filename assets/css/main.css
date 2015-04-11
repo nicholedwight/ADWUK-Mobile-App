@@ -1,13 +1,15 @@
 @font-face {
   font-family: 'VAG-bold';
   src: url('../fonts/vagrounded-bold.ttf');
-  src:  url('../fonts/vagrounded-bold.ttf') format('truetype');
+  src: url('../fonts/vagrounded-bold.woff') format('woff'),
+       url('../fonts/vagrounded-bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'vag';
   src: url('../fonts/vagrounded-thin.ttf');
-  src:  url('../fonts/vagrounded-thin.ttf') format('truetype');
+  src: url('../fonts/vagrounded-thin.woff') format('woff'),
+       url('../fonts/vagrounded-thin.ttf') format('truetype');
 }
 
 @font-face {
@@ -24,12 +26,16 @@
 /* Micro reset */
 *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
 html, body { height: 100%; width: 100%; font-family: 'vag', Helvetica, Arial, sans-serif; }
-h1, h2 {
+h1, h2, h3, h4 {
   font-family: 'VAG-bold', Helvetica, Arial, sans-serif;
 }
 body {
     /* Without this, the body has excess horizontal scroll when the menu is open */
   overflow-x: hidden;
+}
+
+html, body {
+  max-width: 700px;
 }
 
 img {
@@ -47,6 +53,21 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .forum-categories,
@@ -93,7 +114,7 @@ div.profile_settings {
 
 .breadcrumb {
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .breadcrumb li {
@@ -113,6 +134,7 @@ div.profile_settings {
   height: 70px;
   background: #515050;
   position: fixed;
+  max-width: 700px;
   width: 100%;
   z-index: 20;
   text-align: center;
@@ -122,6 +144,15 @@ div.profile_settings {
 .header-logo {
   width: 155px;
   margin: 5px 15px;
+}
+
+.notifications:before {
+  font-family: 'fontello';
+  content: '\e808';
+  font-size: 2em;
+  position: absolute;
+  right: 6%;
+  top: 22%;
 }
 
 .navigation {
@@ -169,8 +200,9 @@ div.profile_settings {
   z-index: 10;
 }
 
-.site-wrap, .landing, .forum-wrap {
-  min-height: 100%;
+.site-wrap, .landing, .forum-wrap,
+.message-wrap {
+  min-height: 80%;
   min-width: 100%;
   background-color: white;
   position: relative;
@@ -179,6 +211,11 @@ div.profile_settings {
   left: 0;
   z-index: 10;
   padding: 1em 1.4em;
+}
+
+.message-wrap {
+  padding: 2px 0 0 0;
+  min-height: 75%;
 }
 
 .forum-wrap {
@@ -435,7 +472,7 @@ textarea {
 }
 
 .search-field {
-  width: 240px;
+  width: 222px;
   height: 35px;
   padding: 8px 12px;
   font-size: 18px;
@@ -549,6 +586,19 @@ input[type="checkbox"] {
   padding: 13px 9px;
 }
 
+.contacts li {
+  padding: 10px 15px;
+}
+
+.frequent {
+  margin-top: 30px;
+}
+
+.frequent-header {
+  text-indent: 1em;
+  font-size: 1.3em;
+}
+
 .new-message {
   background-color: #BF2786;
   position: fixed;
@@ -571,6 +621,14 @@ input[type="checkbox"] {
   color: #FFF;
 }
 
+.message-list {
+  margin-top: -5px;
+}
+
+.message-list li {
+  padding: 10px 0;
+}
+
 .im_message_wrap {
   position: relative;
   max-width: 450px;
@@ -584,12 +642,14 @@ input[type="checkbox"] {
 
 .im_photo {
   margin: 0 15px 0 0;
-  padding: 11px 10px;
+  padding: 12px 10px;
   border-radius: 50%;
   overflow: hidden;
   float: left;
   cursor: pointer;
   background-color: green;
+  clear: both;
+  width: 42px;
 }
 
 .user_photo img {
@@ -604,6 +664,22 @@ input[type="checkbox"] {
 
 .cindy:before {
   content: 'CL';
+}
+
+.shereads {
+  background-color: turquoise;
+  padding: 12px 10px;
+}
+.shereads:before {
+  content: 'SR';
+}
+
+.SouthWestAngel {
+  background-color: red;
+  padding: 12px 8px;
+}
+.SouthWestAngel:before {
+  content: 'SW';
 }
 
 .sent-time {
@@ -628,13 +704,29 @@ input[type="checkbox"] {
   line-height: 150%;
 }
 
-.message {
-  margin-left: 13%;
+.unread {
   background: #E7E7E7;
-  border-color: #E7E7E7;
 }
 
-.send {
+.textarea {
+  background: #E7E7E7;
+  height: 87px;
+}
+
+.message {
+  background: #E7E7E7;
+  border-color: #E7E7E7;
+  font-size: 14px;
+  width: 80%;
+}
+
+.bottom-sticky {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.send, .sendNew {
   background-image: url('../img/send.png');
   background-size: 42px;
   height: 70px;
@@ -643,4 +735,34 @@ input[type="checkbox"] {
   background-color: transparent;
   border: none;
   margin-top: 5%;
+  margin-right: 2%;
+}
+
+.search-users {
+  margin-left: 7%;
+}
+
+.tt-hint {
+  color: #888;
+}
+
+.tt-dropdown-menu {
+  width: 320px;
+  max-height: 200px;
+  overflow-y: scroll;
+  margin: 12px;
+  text-align: left;
+  text-indent: 10px;
+  padding: 8px 0;
+  background-color: #fff;
+  color: #000;
+  z-index: 200;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }

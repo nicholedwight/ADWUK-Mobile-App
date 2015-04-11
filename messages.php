@@ -1,9 +1,10 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
+<label for="nav-trigger">Menu</label>
 <div class="wrapper">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
+    <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
   </header>
   <div class="content-banner">
     <h1>Messages</h1>
@@ -14,34 +15,67 @@
       </ul>
     </div>
   </div>
-  <div id="main" role="main" class="forum-wrap">
+  <div id="main" role="main" class="message-wrap">
     <ul class="message-list">
-      <li>
+      <li class="unread">
         <a href="conversation.php">
-          <h3>CindyLou</h3>
-          <p class="seen">14:25</p>
-          <p>Lorem ipsum dolor sit amet, in dolorum voluptatum...</p>
+          <div class="im_message_wrap">
+            <div class="im_content_message_wrap">
+              <div href="#" class="im_photo cindy"></div>
+              <div class="sent-time">
+                <p>17:02</p>
+              </div>
+              <div class="im_message_body">
+                <p href="#" class="author">CindyLou</p>
+                <div class="im_message_text">
+                  Lorem ipsum dolor sit amet, in dolorum voluptatum...
+                </div>
+              </div>
+            </div>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="#">
-          <h3>shereads</h3>
-          <p>10:08</p>
-          <p>Lorem ipsum dolor sit amet, in dolorum voluptatum...</p>
+          <div class="im_message_wrap">
+            <div class="im_content_message_wrap">
+              <div href="#" class="im_photo shereads"></div>
+              <div class="sent-time">
+                <p>10:08</p>
+              </div>
+              <div class="im_message_body">
+                <p href="#" class="author">shereads</p>
+                <div class="im_message_text">
+                  Lorem ipsum dolor sit amet, in dolorum voluptatum...
+                </div>
+              </div>
+            </div>
+          </div>
         </a>
       </li>
 
       <li>
         <a href="#">
-          <h3>sweetWheels</h3>
-          <p><?php echo $yesterday; ?></p>
-          <p>Lorem ipsum dolor sit amet, in dolorum voluptatum...</p>
+          <div class="im_message_wrap">
+            <div class="im_content_message_wrap">
+              <div href="#" class="im_photo SouthWestAngel"></div>
+              <div class="sent-time">
+                <p><?php echo $yesterday; ?></p>
+              </div>
+              <div class="im_message_body">
+                <p href="#" class="author">SouthWestAngel</p>
+                <div class="im_message_text">
+                  Lorem ipsum dolor sit amet, in dolorum voluptatum...
+                </div>
+              </div>
+            </div>
+          </div>
         </a>
       </li>
     </ul>
 
-    <a href="#" class="new-message circle"></a>
+    <a href="new.php" class="new-message circle"></a>
   </div>
   <!-- End of site-wrap -->
 </div>

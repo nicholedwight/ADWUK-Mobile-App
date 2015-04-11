@@ -4,6 +4,7 @@
 <div class="wrapper">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
+    <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
   </header>
   <div class="content-banner">
     <h1>Messages</h1>
@@ -15,7 +16,7 @@
       </ul>
     </div>
   </div>
-  <div id="main" role="main" class="forum-wrap">
+  <div id="main" role="main" class="message-wrap">
     <div class="im_message_wrap">
       <div class="im_content_message_wrap">
         <a href="#" class="im_photo cindy"></a>
@@ -80,8 +81,10 @@
       </div>
     </div>
     <div class="flex-inline">
-      <textarea rows="10" cols="40" placeholder="Write a message..." class="message"></textarea>
-      <button type="submit" class="send">Send</button>
+      <form method="get" action="#" class="textarea">
+        <textarea rows="10" cols="40" placeholder="Write a message..." class="message"></textarea>
+        <button type="submit" class="send">Send</button>
+      </form>
     </div>
   </div>
   <!-- End of site-wrap -->

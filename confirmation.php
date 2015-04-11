@@ -4,6 +4,7 @@
 <div class="wrapper">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
+    <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
   </header>
   <div class="content-banner">
     <h1>Registration Complete</h1>

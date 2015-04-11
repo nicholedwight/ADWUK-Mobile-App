@@ -1,6 +1,11 @@
 <?php
+  session_start();
   $date = date('D M d, Y');
   $yesterday = date("D M d, Y", time() - 60 * 60 * 24);
+  $email = $_GET['email'];
+  $parts = explode("@", $email);
+  $username = $parts[0];
+  $_SESSION['username'] = $username;
 ;?>
 <!DOCTYPE html>
 <html class="no-js">

@@ -5,10 +5,11 @@
 <div class="wrapper">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
+    <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
   </header>
 
   <div class="content-banner">
-    <h1>Hello, USERNAME.</h1>
+    <h1>Hello, <?php echo $_SESSION['username'];?>.</h1>
   </div>
   <div id="main" role="main" class="forum-wrap">
     <div class="menu-action">
@@ -30,7 +31,7 @@
 
       <li>
         <h3>Wheelchair friendly companies in Bristol?</h3>
-        <p>Last post by: <span class="user">sweetWheels</span> on <span class="post_date"><?php echo $yesterday;?>, 09:12</p>
+        <p>Last post by: <span class="user">SouthWestAngel</span> on <span class="post_date"><?php echo $yesterday;?>, 09:12</p>
         <p>Replies: <strong>23</strong></p>
       </li>
 
