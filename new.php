@@ -1,7 +1,7 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-<div class="wrapper">
+<label for="nav-trigger"><span class="visually-hidden">Menu</span></label>
+<div class="wrapper" id="top">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
     <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
@@ -29,15 +29,23 @@
       <hr />
       <ul class="contacts">
         <li>
-          <div href="#" class="im_photo cindy"></div>
-          <p>CindyLou</p>
+          <a href="conversation.php">
+            <div class="user_photo">
+              <img src="./assets/img/gravatar1.png" alt="CindyLou">
+            </div>
+            <p>CindyLou</p>
+          </a>
         </li>
         <li>
-          <div href="#" class="im_photo shereads"></div>
+          <div class="user_photo">
+            <img src="./assets/img/gravatar2.png" alt="shereads">
+          </div>
           <p>shereads</p>
         </li>
         <li>
-          <div href="#" class="im_photo SouthWestAngel"></div>
+          <div class="user_photo">
+            <img src="./assets/img/wheels.png" alt="SouthWestAngel">
+          </div>
           <p>SouthWestAngel</p>
         </li>
       </ul>

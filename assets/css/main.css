@@ -55,6 +55,21 @@ a {
   text-decoration: none;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #626262;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #626262;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #626262;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #626262;
+}
+
 .hidden {
   display: none;
 }
@@ -126,7 +141,7 @@ div.profile_settings {
   padding: 0 5px;
 }
 
-.previous a {
+.previous a, .confirmation a {
   text-decoration: underline;
 }
 
@@ -173,6 +188,7 @@ div.profile_settings {
   width: 200px;
   border-top: 1px solid #111;
   border-bottom: 1px solid #000;
+  position: relative;
 }
 
 .nav-item a {
@@ -188,6 +204,17 @@ div.profile_settings {
 .nav-item a:hover {
   color: #c74438;
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+.new-notification {
+  background: red;
+  width: 15px;
+  text-align: center;
+  font-size: 0.8em;
+  position: absolute;
+  left: 110px;
+  top: 25%;
+  padding: 3px 1px 0 0;
 }
 
 .wrapper {
@@ -206,11 +233,12 @@ div.profile_settings {
   min-width: 100%;
   background-color: white;
   position: relative;
-  top: 0;
+  top: -1px;
   bottom: 100%;
   left: 0;
   z-index: 10;
-  padding: 1em 1.4em;
+  padding: 1em 1em;
+  overflow: auto;
 }
 
 .message-wrap {
@@ -219,11 +247,27 @@ div.profile_settings {
 }
 
 .forum-wrap {
-  padding: 1em 0 0 0;
+  padding: 1em 0.5em 0 0.5em;
 }
 
-.landing {
+.landing, .register-wrap {
   background-color: #BF2786;
+  min-height: 100%;
+  padding: 1em 0;
+}
+
+.register-wrap {
+  min-height: 100%;
+}
+
+.register-wrap p, .register-wrap label {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+p.login-link {
+  text-align: center;
 }
 
 .landing-header {
@@ -277,10 +321,18 @@ label[for="save-settings"] {
 
 .login-container, .register-container {
   background-color: #FFF;
-  width: 90%;
-  height: 350px;
+  width: 95%;
+  min-height: 480px;
   margin: 0 auto;
   text-align: center;
+}
+
+.login-container a, .register-container a {
+  text-decoration: underline;
+}
+
+.login-container {
+  margin-top: 15%;
 }
 
 .login-form, .register-form {
@@ -292,11 +344,45 @@ label[for="save-settings"] {
   width: 95%;
 }
 
+.register-form textarea {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .email-confirmation {
   display: none;
   z-index: 50;
-  width: 200px;
-  height: 250px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.confirm {
+  background: #FFF;
+  margin-top: 45%;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+.confirm p {
+  text-align: center;
+}
+
+.continue {
+  background: #1abc9c;
+}
+
+.cancel {
+  background: #e74c3c;
+}
+
+#email-check {
+  font-family: 'VAG-bold';
+  font-weight: bold;
 }
 
 .field-wrapper {
@@ -311,7 +397,7 @@ label[for="save-settings"] {
   font-size: 1em;
   line-height: 1.6em;
   border: none;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #626262;
   outline: 0;
   margin: 1em 0.4em;
   padding: 0 0 1em 0;
@@ -325,12 +411,16 @@ label[for="save-settings"] {
   border-bottom: 1px solid #BF2786;
 }
 
+label {
+  font-size: 1.2em;
+}
+
 .field-wrapper label {
   position: absolute;
   top: 3px;
   left: 7.5%;
-  font-size: 11px;
-  color: #aaa;
+  font-size: 0.9em;
+  color: #626262;
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   opacity: 0;
@@ -348,6 +438,12 @@ label.show {
 
 textarea {
   height: 85px;
+  margin-top: 8px;
+  resize: none;
+  outline: none;
+  padding: 5px;
+  overflow-y: auto;
+  font-size: 1em;
 }
 
 .forum-categories li {
@@ -426,7 +522,12 @@ textarea {
 .boxed {
   border: 1px solid grey;
   padding: 1em;
-  margin: 40px 0;
+  margin: 41px auto;
+  max-width: 400px;
+}
+
+a.btn {
+  text-decoration: none;
 }
 
 .btn {
@@ -469,6 +570,14 @@ textarea {
 }
 .fileUpload:active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.forum-search {
+  width: 320px;
+}
+
+.forum-search .search-btn {
+  right: 5%;
 }
 
 .search-field {
@@ -606,6 +715,21 @@ input[type="checkbox"] {
   bottom: 10px;
 }
 
+.menu-action {
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.action {
+  padding: 5px 80px;
+}
+
+.action:hover,
+.action:focus {
+  background-color: #f6f7f8;
+}
+
 .action:before, .new-message:before {
   font-family: 'fontello';
   content: '\e801';
@@ -640,18 +764,6 @@ input[type="checkbox"] {
   margin: 8px 8px;
 }
 
-.im_photo {
-  margin: 0 15px 0 0;
-  padding: 12px 10px;
-  border-radius: 50%;
-  overflow: hidden;
-  float: left;
-  cursor: pointer;
-  background-color: green;
-  clear: both;
-  width: 42px;
-}
-
 .user_photo img {
   margin: 0 15px 0 0;
   width: 40px;
@@ -660,26 +772,6 @@ input[type="checkbox"] {
   overflow: hidden;
   float: left;
   cursor: pointer;
-}
-
-.cindy:before {
-  content: 'CL';
-}
-
-.shereads {
-  background-color: turquoise;
-  padding: 12px 10px;
-}
-.shereads:before {
-  content: 'SR';
-}
-
-.SouthWestAngel {
-  background-color: red;
-  padding: 12px 8px;
-}
-.SouthWestAngel:before {
-  content: 'SW';
 }
 
 .sent-time {

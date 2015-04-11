@@ -1,6 +1,6 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
+<label for="nav-trigger"><span class="visually-hidden">Menu</span></label>
 <div class="wrapper" id="content">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>

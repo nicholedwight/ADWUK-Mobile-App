@@ -1,7 +1,7 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-<div class="wrapper">
+<label for="nav-trigger"><span class="visually-hidden">Menu</span></label>
+<div class="wrapper" id="top">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
     <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
@@ -17,7 +17,7 @@
     </div>
   </div>
   <div id="main" role="main" class="forum-wrap">
-    <form method="get" action="#" class="flex-inline">
+    <form method="get" action="#" class="flex-inline forum-search">
       <input class="search-field" type="search" placeholder="Search everything" name="searchTerm" required>
       <button type="submit" class="search-btn">Search</button>
     </form>

@@ -22,6 +22,10 @@ $(document).ready(function () {
     $('.email-confirmation').css({
         'display': 'block'
     });
+    var email = document.getElementById("email-reg").value;
+    var check = document.getElementById("email-check");
+    check.innerHTML = check.innerHTML + email;
+    console.log(email);
   });
 
   $('.cancel').click(function() {

@@ -1,7 +1,7 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-<div class="wrapper">
+<label for="nav-trigger"><span class="visually-hidden">Menu</span></label>
+<div class="wrapper" id="top">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
     <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
@@ -16,8 +16,8 @@
       </ul>
     </div>
   </div>
-  <div id="main" role="main" class="site-wrap">
-    <h1>Your account has all been set up</h1>
+  <div id="main" role="main" class="site-wrap confirmation">
+    <h1>Your account has all been set up, <?php echo $_SESSION['username']; ?></h1>
     <p>You can access your account details from the <a href="edit.php">My Profile</a> area in order to:</p>
     <ul class="bullets">
       <li>Update your personal details</li>

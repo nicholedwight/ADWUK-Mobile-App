@@ -1,7 +1,7 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger">Menu</label>
-<div class="wrapper">
+<label for="nav-trigger"><span class="visually-hidden">Menu</span></label>
+<div class="wrapper" id="top">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
     <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
@@ -20,8 +20,8 @@
       <li class="unread">
         <a href="conversation.php">
           <div class="im_message_wrap">
-            <div class="im_content_message_wrap">
-              <div href="#" class="im_photo cindy"></div>
+            <div class="im_content_message_wrap user_photo">
+              <img src="./assets/img/gravatar1.png" alt="CindyLou">
               <div class="sent-time">
                 <p>17:02</p>
               </div>
@@ -40,7 +40,9 @@
         <a href="#">
           <div class="im_message_wrap">
             <div class="im_content_message_wrap">
-              <div href="#" class="im_photo shereads"></div>
+              <a href="#" class="user_photo">
+                <img src="./assets/img/gravatar2.png" alt="shereads">
+              </a>
               <div class="sent-time">
                 <p>10:08</p>
               </div>
@@ -59,7 +61,9 @@
         <a href="#">
           <div class="im_message_wrap">
             <div class="im_content_message_wrap">
-              <div href="#" class="im_photo SouthWestAngel"></div>
+              <a href="#" class="user_photo">
+                <img src="./assets/img/gravatar2.png" alt="SouthWestAngel">
+              </a>
               <div class="sent-time">
                 <p><?php echo $yesterday; ?></p>
               </div>
