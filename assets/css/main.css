@@ -268,6 +268,10 @@ div.profile_settings {
   z-index: 10;
 }
 
+.open {
+  left: 200px !important;
+}
+
 .site-wrap, .landing, .forum-wrap,
 .message-wrap {
   min-height: 80%;
@@ -343,19 +347,13 @@ label[for="nav-trigger"] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='white'/><rect y='24' width='30' height='6' fill='white'/><rect y='12' width='30' height='6' fill='white'/></svg>");
 }
 
-.nav-trigger:checked ~ .wrapper,
-.nav-item:focus ~ .wrapper {
+.nav-trigger:checked ~ .wrapper {
   left: 200px;
 }
 
 /*.saved {
   display: none;
 }*/
-
-.save-settings:checked ~ .saved {
-  left: 400px;
-  color: red;
-}
 
 label[for="save-settings"] {
   content: 'Save Changes';
