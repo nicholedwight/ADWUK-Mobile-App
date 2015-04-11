@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
+  <a href="#top" class="skiplink focusable visuallhiddenskip">Skip to Content</a><!-- provides accessibility for screen readers/tab-users who don't want to go through the nav over and over-->
   <nav role="navigation">
     <ul class="navigation">
       <li class="nav-item">

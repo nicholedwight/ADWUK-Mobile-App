@@ -1,5 +1,5 @@
 <?php include('inc/header.php'); ?>
-<div class="wrapper" id="top">
+<div class="wrapper" id="top" tabindex="0">
   <div id="main" role="main" class="site-wrap register-wrap">
     <div class="register-container">
       <div class="landing-header">
@@ -49,7 +49,7 @@
           <label for="password2">Password Confirmation (required)</label>
           <input type="password" id="password2" name="password2" placeholder="Password Confirmation (required)" class="text-input reg-required" required>
         </div>
-        <button type="submit" class="register btn" id="register-btn"><a href="#top">Register</a></button>
+        <button type="submit" class="register btn" id="register-btn">Register</button>
         <?php $email = $_POST['email'];?>
 
         <div class="email-confirmation">

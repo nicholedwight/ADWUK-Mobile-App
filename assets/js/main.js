@@ -1,5 +1,22 @@
 var highlight = false;
+// setInterval("console.log(document.activeElement)", 2000);
+
 $(document).ready(function () {
+  $('.nav-item a').tabindex = -1;
+  $('.nav-trigger').focus($('.nav-item a').tabindex = 0);
+  $('.nav-item a').focus(function() {
+    console.log("BOOBS");
+    $('.wrapper').css({
+    'left':'200px'
+    })
+  });
+  $('.nav-item a').blur(function() {
+    console.log("TITS");
+    $('.wrapper').css({
+    'left':'0'
+    })
+  });
+  // console.log(document.activeElement.innerHTML);
   var onClass = "on";
   var showClass = "show";
 

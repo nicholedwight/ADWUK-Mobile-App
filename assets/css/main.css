@@ -70,6 +70,36 @@ a {
    color:    #626262;
 }
 
+.skiplink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-decoration: underline;
+  background-color: #3b3b3b;
+  display: block;
+  width: 100% !important;
+  text-align: center;
+  line-height: 1.2rem;
+  z-index: 1001;
+  color: #FFF;
+}
+
+.visuallhiddenskip {
+  border: 0px none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.visuallhiddenskip.focusable:active, .visuallhiddenskip.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0px;
+    overflow: visible;
+}
+
 .hidden {
   display: none;
 }
@@ -217,6 +247,17 @@ div.profile_settings {
   padding: 3px 1px 0 0;
 }
 
+.general-notification {
+  left: 91%;
+  top: 10%;
+}
+
+@media (min-width: 600px) {
+  .general-notification {
+    left: 93%;
+  }
+}
+
 .wrapper {
   height: 100%;
   width: 100%;
@@ -302,7 +343,8 @@ label[for="nav-trigger"] {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='white'/><rect y='24' width='30' height='6' fill='white'/><rect y='12' width='30' height='6' fill='white'/></svg>");
 }
 
-.nav-trigger:checked ~ .wrapper {
+.nav-trigger:checked ~ .wrapper,
+.nav-item:focus ~ .wrapper {
   left: 200px;
 }
 
@@ -363,7 +405,7 @@ label[for="save-settings"] {
 
 .confirm {
   background: #FFF;
-  margin-top: 45%;
+  margin-top: 95%;
   padding: 20px;
   font-size: 1.5em;
 }

@@ -1,7 +1,7 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"><span class="visually-hidden">Menu</span></label>
-<div class="wrapper" id="top">
+<label for="nav-trigger" onclick=""><span class="visually-hidden">Menu</span></label>
+<div class="wrapper" id="top" tabindex="0">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
     <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
@@ -43,7 +43,7 @@
           <p>16:59</p>
         </div>
         <div class="im_message_body">
-          <a href="#" class="author">You</a>
+          <a href="#" class="author"><?php echo $_SESSION['username'];?></a>
           <div class="im_message_text">
             Lorem ipsum dolor sit amet, in dolorum voluptatum nec, summo dolor suavitate eu nam.
           </div>
@@ -60,7 +60,7 @@
           <p>17:02</p>
         </div>
         <div class="im_message_body">
-          <a href="#" class="author">You</a>
+          <a href="#" class="author"><?php echo $_SESSION['username'];?></a>
           <div class="im_message_text">
             Lorem ipsum dolor sit amet, in dolorum voluptatum nec, summo dolor suavitate eu nam.
           </div>
