@@ -6,7 +6,7 @@
         <img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK">
       </div>
       <h1>Join Us</h1>
-      <form method="post" action="confirmation.php" class="register-form">
+      <form method="post" action="confirmation.php" class="register-form" name="registration">
         <div class="field-wrapper">
           <label for="fname">First Name (required)</label>
           <input type="text" id="fname" name="fname" placeholder="First Name (required)" class="text-input reg-required" required>
@@ -49,7 +49,7 @@
           <label for="password2">Password Confirmation (required)</label>
           <input type="password" id="password2" name="password2" placeholder="Password Confirmation (required)" class="text-input reg-required" required>
         </div>
-        <a href="#top" class="register btn" id="register-btn">Register</a>
+        <button type="submit" class="register btn" id="register-btn"><a href="#top">Register</a></button>
         <?php $email = $_POST['email'];?>
 
         <div class="email-confirmation">

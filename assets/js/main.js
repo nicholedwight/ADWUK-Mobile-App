@@ -21,18 +21,33 @@ $(document).ready(function () {
   $('#register-btn').removeAttr('href');
 
   $('.register').click(function() {
-    var email = document.getElementById("email-reg").value;
-    var check = document.getElementById("email-check");
-    check.innerHTML = check.innerHTML + email;
+    event.preventDefault();
 
-    if(document.getElementsByClassName("reg-required").value != null) {
-      $('#register-btn').addAttr('href');
-      $('.email-confirmation').css({
-          'display': 'block'
-      });
+    var emailreq = document.forms["registration"]["email"].value;
+    var fname = document.forms["registration"]["fname"].value;
+    var lname = document.forms["registration"]["lname"].value;
+    var username = document.forms["registration"]["username"].value;
+    var password = document.forms["registration"]["password"].value;
+    var password2 = document.forms["registration"]["password2"].value;
+
+    var emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+
+    if(emailreq && fname && lname && username && password && password2) {
       /* console.log("Everything's filled in"); */
+      if (emailreq.search(emailRegEx) == -1) {
+          alert("Please enter a valid email address.");
+      }
+      else {
+         $('#register-btn').attr('href');
+         $('.email-confirmation').css({
+             'display': 'block'
+         });
+         var email = document.getElementById("email-reg").value;
+         var check = document.getElementById("email-check");
+         check.innerHTML = check.innerHTML + email;
+      }
     } else {
-      alert("Please fill in all required fields!")
+      alert("Please fill in all required fields!");
       /* console.log("something's wrong."); */
     }
   });
