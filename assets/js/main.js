@@ -18,14 +18,23 @@ $(document).ready(function () {
       $(this).prev("label").removeClass(onClass);
   }).trigger("checkval");
 
+  $('#register-btn').removeAttr('href');
+
   $('.register').click(function() {
-    $('.email-confirmation').css({
-        'display': 'block'
-    });
     var email = document.getElementById("email-reg").value;
     var check = document.getElementById("email-check");
     check.innerHTML = check.innerHTML + email;
-    console.log(email);
+
+    if(document.getElementsByClassName("reg-required").value != null) {
+      $('#register-btn').addAttr('href');
+      $('.email-confirmation').css({
+          'display': 'block'
+      });
+      /* console.log("Everything's filled in"); */
+    } else {
+      alert("Please fill in all required fields!")
+      /* console.log("something's wrong."); */
+    }
   });
 
   $('.cancel').click(function() {

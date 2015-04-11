@@ -467,8 +467,14 @@ textarea {
 
 .register, .submit {
   background-color: #BF2786;
-  color: white;
+  color: #FFF;
   text-transform: uppercase;
+}
+
+.invalid-register {
+  color: #FFF;
+  text-transform: uppercase;
+  background-color: grey;
 }
 
 .register:hover,
