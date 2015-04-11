@@ -2,6 +2,12 @@
   session_start();
   $date = date('D M d, Y');
   $yesterday = date("D M d, Y", time() - 60 * 60 * 24);
+  $url = $_SERVER['REQUEST_URI'];
+  $parts = explode('/', $url);
+  $value = $parts[count($parts) - 1];
+  if (!isset($_SESSION['username']) && ($value != 'index.php' && $value != 'registration.php')) {
+    header('Location: http://localhost:8888/adwuk/index.php');
+  }
   if ($_POST['email']) {
       $email = $_POST['email'];
       $parts = explode("@", $email);
@@ -24,7 +30,7 @@
     <ul class="navigation">
       <li class="nav-item">
         <a href="edit.php" class="user_photo">
-          <img src="./assets/img/gravatar1.png" alt="CindyLou">
+          <img src="./assets/img/p-image.png" alt="Your Profile Image">
           My Profile
           <p class="small">Edit Profile</p>
         </a>

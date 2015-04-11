@@ -28,6 +28,7 @@
 html, body { height: 100%; width: 100%; font-family: 'vag', Helvetica, Arial, sans-serif; }
 h1, h2, h3, h4 {
   font-family: 'VAG-bold', Helvetica, Arial, sans-serif;
+  clear: both;
 }
 body {
     /* Without this, the body has excess horizontal scroll when the menu is open */
@@ -125,6 +126,21 @@ div.profile_settings {
   display: flex;
 }
 
+.text-preferences label,
+.text-preferences select {
+  float: left;
+  clear: left;
+  margin: 0 auto;
+}
+
+.text-preferences select {
+  width: 98%;
+  height: 35px;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
 .upload {
   width: 230px;
   margin-left: 15px;
@@ -183,7 +199,7 @@ div.profile_settings {
   width: 100%;
   z-index: 20;
   text-align: center;
-  color: #FFF;
+  color: pink;
 }
 
 .header-logo {
@@ -200,6 +216,80 @@ div.profile_settings {
   top: 22%;
 }
 
+.active-action {
+  color: #FFF;
+}
+
+.notification-flyout {
+  background: #FFF;
+  color: #000;
+  width: 96%;
+  height: 390px;
+  border: 1px solid rgba(100, 100, 100, .4);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  margin: -3px auto;
+  overflow-y: scroll;
+}
+
+.notification-title {
+  -webkit-background-clip: padding-box;
+  background-color: #fff;
+  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px rgba(100, 100, 100, .22);
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  padding: 8px 8px 6px 8px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  text-align: left;
+  font-size: 1.4em;
+}
+
+.notification-flyout:after, .notification-flyout:before {
+	bottom: 100%;
+	left: 90%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+  top: 58%;
+}
+
+.notification-flyout:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+.unread {
+  background-color: #e9eaed;
+  background: rgba(237,239,245,.98);
+}
+
+.scrollable-notifications {
+  margin-top: 48px;
+}
+
+.scrollable-notifications li {
+  display: block;
+  outline: none;
+  padding: 12px 27px 12px 12px;
+  position: relative;
+  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px rgba(100, 100, 100, .22);
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.scrollable-notifications span {
+  color: #999;
+  font-size: 0.8em;
+}
+
 .navigation {
   width: 100%;
   height: 100%;
@@ -212,6 +302,7 @@ div.profile_settings {
   padding-top: 70px;
   list-style: none;
   background: #111;
+  overflow-y: scroll;
 }
 
 .nav-item {
@@ -223,7 +314,7 @@ div.profile_settings {
 
 .nav-item a {
   display: block;
-  padding: 1em;
+  padding: 0.75em 1em;
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
   color: white;
   font-size: 1.2em;
@@ -369,10 +460,6 @@ label[for="save-settings"] {
 
 .login-container a, .register-container a {
   text-decoration: underline;
-}
-
-.login-container {
-  margin-top: 15%;
 }
 
 .login-form, .register-form {
@@ -566,7 +653,7 @@ textarea {
 }
 
 .boxed {
-  border: 1px solid grey;
+  border: 2px solid grey;
   padding: 1em;
   margin: 41px auto;
   max-width: 400px;
@@ -579,7 +666,7 @@ a.btn {
 .btn {
   display: block;
   padding: 12px;
-  width: 300px;
+  width: 295px;
   font-size: 1.15rem;
   font-weight: 400;
   margin: 10px auto;
@@ -736,11 +823,6 @@ input[type="checkbox"] {
   display: block;
 }
 
-.circle {
-  border-radius: 100%;
-  padding: 13px 9px;
-}
-
 .contacts li {
   padding: 10px 15px;
 }
@@ -759,6 +841,11 @@ input[type="checkbox"] {
   position: fixed;
   right: 10px;
   bottom: 10px;
+  display: flex;
+  padding: 0 10px 0 0;
+  color: #FFF;
+  border: 1px solid rgba(100, 100, 100, .4);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 }
 
 .menu-action {
@@ -789,6 +876,8 @@ input[type="checkbox"] {
 
 .new-message:before {
   color: #FFF;
+  text-align: center;
+  padding: 11px 5px 7px 10px;
 }
 
 .message-list {

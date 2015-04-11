@@ -1,6 +1,3 @@
-var highlight = false;
-setInterval("console.log(document.activeElement)", 2000);
-
 $(document).ready(function () {
   $('.nav-item a').tabindex = -1;
   $('.nav-trigger').focus($('.nav-item a').tabindex = 0);
@@ -82,37 +79,13 @@ $(document).ready(function () {
     });
   });
 
+  $('.notifications').click(function() {
+    $('.notifications').toggleClass('active-action');
+    $('.notification-flyout').toggleClass('hidden');
+  });
+
 
 });
-
-function toggleHighlight() {
-  if(highlight == false) {
-    highlight = true;
-    highlightOn();
-    console.log(highlight);
-  } else {
-    highlight = false;
-    console.log(highlight);
-  }
-}
-
-function highlightOn() {
-  if(highlight == true) {
-    $('p, a, h1, h2, h3, h4').each(function() {
-      var $this = $(this);
-      $this.html($this.text().replace(/\b(\w+)\b/g, "<span>$1</span>"));
-    });
-
-    $('div span').hover(
-        function() {
-            $(this).css('background-color','#FC0');
-        },
-        function() {
-            $(this).css('background-color','');
-        }
-    )
-  }
-}
 
 var substringMatcher = function(strs) {
       return function findMatches(q, cb) {

@@ -4,7 +4,51 @@
 <div class="wrapper" id="top" tabindex="0">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
-    <span class="notifications"><a href="#" class="visually-hidden">Notifications</a></span>
+    <span class="notifications">
+      <div class="new-notification general-notification">
+        2
+      </div>
+      <a href="#" class="visually-hidden">Notifications</a>
+    </span>
+    <div class="notification-flyout hidden">
+      <div class="notification-title">
+        <h3>Notifications</h3>
+      </div>
+      <div class="scrollable-notifications">
+        <ul class="notification-items">
+          <li class="unread">
+            <a href="#">
+              MentorJoe also commented on your post in Dyslexia in Tech
+              <span>1 hour ago</span>
+            </a>
+          </li>
+          <li class="unread">
+            <a href="#">
+              CindyLou sent you a private message
+              <span>1 hour ago</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Zandig replied to your comment in Anyone in Bedminster
+              <span>3 hours ago</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              shereads sent you a private message
+              <span>6 hours ago</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Your application for a mentor has been received
+              <span>8 hours ago</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <div class="content-banner">
     <h1>Accessibility Settings</h1>
@@ -19,29 +63,27 @@
     <p>This page allows you to personalise and change some settings to make our website suit your needs. You can edit the font size, colour preferences and overlays, and find some text-to-speech software. Should you wish to return to the standard settings, use the 'Reset' button at the bottom.</p>
 
     <div class="boxed">
-      <h2>Highlight</h2>
-      <p>This provides syntax hightlighting on focussed text to help users who have difficulties with reading words</p>
-      <a href="#" onclick="toggleHighlight();">Test</a>
-    </div>
-
-    <div class="boxed">
       <form method="post" action="#" class="user_settings">
         <h2>Choose your text preferences</h2>
-        <label for="size">Text size</label>
-        <select name="size" id="size">
-          <option>Standard</option>
-          <option>+1</option>
-          <option>+2</option>
-          <option>+3</option>
-        </select>
+        <div class="text-preferences">
+          <label for="size">Text size</label>
+          <select name="size" id="size">
+            <option>Standard</option>
+            <option>+1</option>
+            <option>+2</option>
+            <option>+3</option>
+          </select>
+        </div>
 
-        <label for="spacing">Letter spacing</label>
-        <select name="spacing" id="spacing">
-          <option>Standard</option>
-          <option>+1</option>
-          <option>+2</option>
-          <option>+3</option>
-        </select>
+        <div class="text-preferences">
+          <label for="spacing">Letter spacing</label>
+          <select name="spacing" id="spacing">
+            <option>Standard</option>
+            <option>+1</option>
+            <option>+2</option>
+            <option>+3</option>
+          </select>
+        </div>
 
         <h2>Choose your colour contrast preferences</h2>
         <label class="colour-pref">
