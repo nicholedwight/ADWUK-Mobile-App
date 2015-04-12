@@ -71,12 +71,12 @@
     <form method="post" action="" class="contact-form">
       <div class="field-wrapper">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" class="text-input">
+        <input type="text" id="name" name="name" class="text-input" required>
       </div>
 
       <div class="field-wrapper">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" class="text-input">
+        <input type="email" id="email" name="email" class="text-input" required>
       </div>
 
       <div class="field-wrapper">
@@ -85,7 +85,7 @@
       </div>
 
       <label for="message">Enquiry</label>
-      <textarea id="message" name="message"></textarea>
+      <textarea id="message" name="message" required></textarea>
 
       <button type="submit" class="btn submit">Send</button>
     </form>

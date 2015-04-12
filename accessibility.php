@@ -60,10 +60,16 @@
     </div>
   </div>
   <div id="main" role="main" class="site-wrap">
+    <?php if($_GET['Save']) { ?>
+      <div class="saved recover">Settings have been saved!</div>
+    <?php } ?>
+    <?php if($_GET['Reset']) { ?>
+      <div class="saved recover">Settings reset!</div>
+    <?php } ?>
     <p>This page allows you to personalise and change some settings to make our website suit your needs. You can edit the font size, colour preferences and overlays, and find some text-to-speech software. Should you wish to return to the standard settings, use the 'Reset' button at the bottom.</p>
 
     <div class="boxed">
-      <form method="post" action="#" class="user_settings">
+      <form method="get" action="#" class="user_settings">
         <h2>Choose your text preferences</h2>
         <div class="text-preferences">
           <label for="size">Text size</label>
@@ -100,8 +106,8 @@
           <input type="radio" name="colourScheme">
           <span>Cream</span>
         </label>
-        <input type="submit" value="Use these settings" class="btn">
-        <input type="submit" value="Reset settings" class="btn">
+        <button type="submit" name="Save" value="save" class="btn">Use these settings</button>
+        <button type="submit" name="Reset" value="reset" class="btn">Reset settings</button>
       </form>
     </div>
   </div>

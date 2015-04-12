@@ -1,7 +1,6 @@
 <?php
 include('inc/header.php');
 session_destroy();
-echo 'You have been logged out. <a href="/">Go back</a>';
 ?>
   <div id="main" role="main" class="site-wrap landing">
     <div class="login-container">

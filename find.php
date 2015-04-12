@@ -90,8 +90,9 @@
       </div>
 
       <div class="text-preferences range">
-        <label for="age">Age Range (required)</label>
+        <label for="age">Age Range</label>
         <select name="age" id="age" required>
+          <option value="none">No Preference</option>
           <option value="18-24">18-24</option>
           <option value="25-34">25-34</option>
           <option value="45-54">45-54</option>

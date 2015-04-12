@@ -38,8 +38,8 @@
           <p>If you do have an impairment, tell us a little about it so we can try to match you with your perfect mentor.</p>
           <textarea id="about-impairment"></textarea>
         <div class="field-wrapper">
-          <label for="email-reg">Email (required)</label>
-          <input type="email" id="email-reg" name="email" rows="10" cols="40" class="text-input reg-required" required>
+          <label for="email">Email (required)</label>
+          <input type="email" id="email" name="email" rows="10" cols="40" class="text-input reg-required" required>
         </div>
         <div class="field-wrapper">
           <label for="password">Password (required)</label>
@@ -56,7 +56,7 @@
           <div class="confirm">
             <p>Does your email look right?</p>
             <p id="email-check"><?php echo $email;?></p>
-            <a class="cancel btn">No</a>
+            <a href="#" class="cancel btn">No</a>
             <button type="submit" class="btn continue">Yes, keep going!</button>
           </div>
         </div>

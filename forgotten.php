@@ -9,15 +9,13 @@
       <p>
         If you have forgotten your password, please enter your email address below. A new password will then be emailed to you shortly..
       </p>
-      <form method="post" action="index.php" class="login-form">
+      <form method="get" action="index.php" class="login-form">
         <div class="field-wrapper">
-          <label for="email-recovery">Email</label>
-          <input type="email" id="email-recovery" name="email-recovery" class="text-input" required>
+          <label for="emailrecovery">Email</label>
+          <input type="email" id="emailrecovery" name="emailrecovery" class="text-input" required>
         </div>
 
         <button type="submit" class="btn submit">Remind me</button>
-
-
       </form>
     </div>
 

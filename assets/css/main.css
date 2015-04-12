@@ -118,11 +118,15 @@ a {
 
 .mask {
   position: relative;
-  top: 0px;
+  top: -15px;
   right: 0px;
   width: 330px;
   height: 135px;
   overflow: hidden;
+}
+
+.forum-wrap .mask {
+  top: 0px;
 }
 
 .mask img {
@@ -198,6 +202,7 @@ div.profile_settings {
   background-color: #FFF;
   padding: 1em;
   padding-top: 75px;
+  border-bottom: 5px solid #BF2786;
 }
 
 .content-banner h1 {
@@ -378,12 +383,13 @@ div.profile_settings {
   position: absolute;
   left: 110px;
   top: 25%;
-  padding: 3px 1px 0 0;
+  padding: 3px 1px 1px 0;
 }
 
 .general-notification {
   left: 91%;
   top: 10%;
+  padding: 3px 0 2px 0;
 }
 
 @media (min-width: 600px) {
@@ -462,13 +468,17 @@ p.login-link {
 /* Hamburger Icon */
 label[for="nav-trigger"] {
   position: fixed;
-  left: 15px; top: 15px;
+  left: 15px;
+  top: 3px;
   z-index: 30;
   height: 30px;
   width: 30px;
   cursor: pointer;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0;
 }
 
 /* Make the Navigation Magic Happen */
@@ -526,21 +536,25 @@ label[for="save-settings"] {
   text-align: center;
 }
 
+.comment-form {
+  margin-top: 20px;
+}
+
 .email-confirmation {
   display: none;
   z-index: 50;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.6);
 }
 
 .confirm {
   background: #FFF;
-  margin-top: 95%;
+  margin-top: 50%;
   padding: 20px;
   font-size: 1.5em;
 }
@@ -649,10 +663,19 @@ textarea {
   margin: 5px auto;
   padding: 5px;
   background-color: #F1EFF5;
+  width: 95%;
 }
 
 .post:nth-of-type(odd) {
   background-color: #E6E2ED;
+}
+
+.post .im_message_body {
+  margin-top: 15px;
+}
+
+.post .im_message_text {
+  padding: 0 10px;
 }
 
 .quote {
@@ -661,7 +684,7 @@ textarea {
 
 .quote-user {
   float: right;
-  margin: 5px 5px 0 0;
+  margin: 0 5px 0 0;
 }
 
 blockquote {
@@ -685,6 +708,12 @@ blockquote {
   padding: 20px;
   color: #FFF;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.recover {
+  width: 80%;
+  margin: 10px auto;
 }
 
 .invalid-register {
@@ -826,6 +855,7 @@ a.btn {
 .mentor-btn {
   background-color: #BF2786;
   display: block;
+  color: #FFF;
   margin: 20px auto;
   text-align: center;
   height: 105px;
@@ -1000,8 +1030,8 @@ a.btn {
   transition: background .2s ease-out, border-color 0s ease-out, color .2s ease-out;
 }
 
-input[type="checkbox"] {
-
+input[type="radio"] {
+  margin-top: 15px;
 }
 
 .block {
@@ -1100,6 +1130,7 @@ input[type="checkbox"] {
 .sent-time {
   float: right;
   text-align: right;
+  margin-top: -9px;
 }
 
 .im_message_body {
@@ -1108,6 +1139,7 @@ input[type="checkbox"] {
 }
 
 .author {
+  padding: 0 0 10px 0;
   margin: 1px 0 4px;
   display: inline-block;
   cursor: pointer;
@@ -1124,6 +1156,7 @@ input[type="checkbox"] {
 }
 
 .textarea {
+  font-family: 'Helvetica';
   background: #E7E7E7;
   height: 87px;
 }

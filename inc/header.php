@@ -5,7 +5,12 @@
   $url = $_SERVER['REQUEST_URI'];
   $parts = explode('/', $url);
   $value = $parts[count($parts) - 1];
-  if (!isset($_SESSION['username']) && ($value != 'index.php' && $value != 'registration.php' && $value != 'forgotten.php')) {
+  $removeGet = explode('?', $value);
+  $newValue = $removeGet[count($removeGet) - 2];
+  // var_dump($value);
+  // var_dump($newValue);
+  if (!isset($_SESSION['username']) && ($value != 'index.php' && $value != 'forgotten.php' && $value != 'registration.php' && $newValue != 'index.php')) {
+    // echo "redirec failed";
     header('Location: http://localhost:8888/adwuk/index.php');
   }
   if ($_POST['email']) {
@@ -14,6 +19,7 @@
       $username = $parts[0];
       $_SESSION['username'] = $username;
   }
+  // var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html class="no-js">

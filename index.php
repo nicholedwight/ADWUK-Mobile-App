@@ -6,6 +6,9 @@
       </div>
 
       <h2>Sign In</h2>
+      <?php if($_GET) { ?>
+        <div class="saved recover">You'll get an email to reset your password soon!</div>
+      <?php } ?>
       <form method="post" action="home.php" id="login" class="login-form">
         <div class="field-wrapper">
           <label for="email">Email</label>

@@ -67,12 +67,10 @@
       <hr />
       <ul class="contacts mentor-results">
         <li>
-          <a href="conversation.php">
-            <div class="user_photo">
-              <img src="./assets/img/joe.jpg" alt="MentorJoe">
-            </div>
-            <p>MentorJoe</p>
-          </a>
+          <div class="user_photo">
+            <img src="./assets/img/joe.jpg" alt="MentorJoe">
+          </div>
+          <p>MentorJoe</p>
         </li>
         <li>
           <div class="user_photo">

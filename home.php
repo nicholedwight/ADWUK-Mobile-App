@@ -55,9 +55,6 @@
     <h1>Hello, <?php echo $_SESSION['username'];?>.</h1>
   </div>
   <div id="main" role="main" class="forum-wrap">
-    <div class="menu-action">
-      <a href="#" class="action">Publish a new post</a>
-    </div>
     <h2>Updates from popular topics:</h2>
     <ul class="forum-categories">
       <li>
