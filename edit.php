@@ -68,11 +68,6 @@
       <div class="image-container">
         <img src="./assets/img/p-image.png" alt="Your Profile Image" class="profile-image">
       </div>
-      <!--<form action="#" method="post" enctype="multipart/form-data" class="upload">
-          <span>Upload new image</span>
-          <input type="file" name="fileToUpload" id="fileToUpload" class="fileUpload">
-          <input type="submit" value="Upload Image" name="submit" class="upload-btn">
-      </form>-->
 
       <input id="uploadFile" placeholder="Choose File" disabled="disabled" class="upload"/>
       <div class="fileUpload btn-upload">

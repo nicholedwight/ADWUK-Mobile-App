@@ -65,7 +65,7 @@ $(document).ready(function () {
     $('.notifications').toggleClass('active-action');
     $('.notification-flyout').toggleClass('hidden');
   });
-  
+
   document.getElementById("uploadBtn").onchange = function () {
     document.getElementById("uploadFile").value = this.value;
   };
