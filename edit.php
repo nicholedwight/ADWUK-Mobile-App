@@ -78,33 +78,33 @@
     <form method="post" action="" class="profile_settings">
       <div class="field-wrapper">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Username" class="text-input">
+        <input type="text" id="username" name="username" class="text-input" value="<?php echo $_SESSION['username'];?>">
       </div>
 
       <p>This information is private, no one will see it but you.</p>
       <div class="field-wrapper">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname" placeholder="First Name" class="text-input">
+        <input type="text" id="fname" name="fname" class="text-input">
       </div>
 
       <div class="field-wrapper">
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname" placeholder="Last Name" class="text-input">
+        <input type="text" id="lname" name="lname" class="text-input">
       </div>
 
       <div class="field-wrapper">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Email" class="text-input">
+        <input type="email" id="email" name="email" class="text-input">
       </div>
 
       <div class="field-wrapper">
         <label for="password">New Password</label>
-        <input type="password" id="password" name="password" placeholder="Password" class="text-input">
+        <input type="password" id="password" name="password" class="text-input">
       </div>
 
       <div class="field-wrapper">
         <label for="password2">Password Confirmation</label>
-        <input type="password" id="password2" name="password2" placeholder="Password Confirmation" class="text-input">
+        <input type="password" id="password2" name="password2" class="text-input">
       </div>
       <input type="checkbox" id="save-settings" class="save-settings" />
       <label class="" for="save-settings"><a href="#content">Save Changes</a></label>

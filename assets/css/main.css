@@ -126,27 +126,31 @@ div.profile_settings {
   display: flex;
 }
 
-.text-preferences label,
+/*.text-preferences label,
 .text-preferences select {
   float: left;
   clear: left;
   margin: 0 auto;
-}
+}*/
 
 .text-preferences select {
-  width: 98%;
+  width: 95%;
   height: 35px;
   border: 1px solid grey;
   margin-bottom: 15px;
   font-size: 1em;
 }
 
-.range select {
-  width: 100%;
+.find-mentor {
+  text-align: center;
 }
 
 .find-mentor p, .range {
   margin: 0 auto;
+}
+
+.range {
+  text-align: center;
 }
 
 .find-mentor .block {
@@ -397,6 +401,11 @@ div.profile_settings {
   overflow: auto;
 }
 
+.site-wrap p {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .message-wrap {
   padding: 2px 0 0 0;
   min-height: 75%;
@@ -609,10 +618,6 @@ textarea {
   text-transform: uppercase;
 }
 
-.btn.find {
-  width: 100%;
-}
-
 .invalid-register {
   color: #FFF;
   text-transform: uppercase;
@@ -637,7 +642,7 @@ form .small {
 }
 
 .image-container {
-  width: 87px;
+  width: 85px;
   height: 82px;
   border: 1px solid grey;
 }
@@ -649,9 +654,9 @@ form .small {
 .colour-pref {
   padding: 1em;
   border: 1px solid #E0E0E0;
-  width: 100%;
+  width: 95%;
   display: block;
-  margin: 5px 0;
+  margin: 5px auto;
 }
 
 .high_contrast {
@@ -725,7 +730,20 @@ a.btn {
   display: block;
   margin: 20px auto;
   text-align: center;
-  padding: 50px 0;
+  height: 135px;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center; /* Safari 7.0+ */
+  align-items: center;
+}
+
+.mentor-btn h2 {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 .fileUpload::-webkit-file-upload-button {

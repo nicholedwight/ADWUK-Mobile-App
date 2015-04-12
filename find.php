@@ -86,7 +86,7 @@
       <p>If you chose other, please specify and we will try our best!</p>
       <div class="field-wrapper">
         <label for="other-gender">Mentor's gender preference (optional)</label>
-        <input type="text" name="other-gender" placeholder="Mentor's gender preference (optional)" class="text-input">
+        <input type="text" name="other-gender" class="text-input">
       </div>
 
       <div class="text-preferences range">
@@ -119,7 +119,7 @@
 
       <p>Is there a specific career area you would like your mentor to have knowledge or experience with?</p>
       <div class="text-preferences range">
-        <label for="age">Industry area (required_)</label>
+        <label for="age">Industry area (required)</label>
         <select name="age" id="age" required>
           <option value="Accountancy">Accountancy</option>
           <option value="Administration">Administration</option>
