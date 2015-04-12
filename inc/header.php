@@ -47,7 +47,7 @@
         </a>
       </li>
       <li class="nav-item"><a href="accessibility.php">Accessibility</a></li>
-      <li class="nav-item"><a href="#">Contact ADWUK</a></li>
+      <li class="nav-item"><a href="contact.php">Contact ADWUK</a></li>
       <li class="nav-item"><a href="logout.php">Sign Out</a></li>
     </ul>
   </nav>

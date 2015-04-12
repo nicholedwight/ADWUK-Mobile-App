@@ -1,7 +1,7 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
 <label for="nav-trigger" onclick=""><span class="visually-hidden">Menu</span></label>
-<div class="wrapper" id="top" tabindex="0">
+<div class="wrapper" id="content">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
     <span class="notifications">
@@ -51,43 +51,48 @@
     </div>
   </header>
   <div class="content-banner">
-    <h1>Forum</h1>
+    <h1>Contact Us</h1>
     <div class="breadcrumb">
       <ul>
         <li class="previous"><a href="home.php">Home</a></li>
-        <li>Forum</li>
+        <li>Get in touch</li>
       </ul>
     </div>
   </div>
-  <div id="main" role="main" class="forum-wrap">
+  <div id="main" role="main" class="site-wrap contact">
     <div class="mask">
-      <img src="./assets/img/forum.gif" alt="">
+      <img src="./assets/img/mask.png" alt="" class="mask-img">
+      <img src="./assets/img/contact.jpg" alt="">
     </div>
-    <ul class="forum-categories">
-      <li>
-        <a href="chat.php">
-          <h3>Informal Chat</h3>
-          <p>A place for general chat about life, society, disability, and making friends.</p>
-          <p>Topics: <strong>22</strong></p>
-        </a>
-      </li>
+    <p>
+      We welcome your comments, feedback and queries so please do get in touch. You can use the enquiry form below or, if you would prefer to speak to a member of the team, call us on <a href="tel:0844 445 7123">0844 445 7123</a>. Our offices are open Monday to Friday between 09.00 and 16.00.
+    </p>
 
-      <li>
-        <a href="#">
-          <h3>Employment</h3>
-          <p>Support on finding a job, career progression, or if you're struggling at work</p>
-          <p>Topics: <strong>11</strong></p>
-        </a>
-      </li>
+    <form method="post" action="" class="contact-form">
+      <div class="field-wrapper">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="text-input">
+      </div>
 
-      <li>
-        <a href="#">
-          <h3>Financial Advice</h3>
-          <p>For advice and questions about finances, benefits, and managing a budget. Qualified mentors will be able to assist you as well as informal advice from peers.</p>
-          <p>Topics: <strong>3</strong></p>
-        </a>
-      </li>
-    </ul>
+      <div class="field-wrapper">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="text-input">
+      </div>
+
+      <div class="field-wrapper">
+        <label for="telephone">Telephone (optional)</label>
+        <input type="tel" id="telephone" name="telephone" class="text-input">
+      </div>
+
+      <label for="message">Enquiry</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit" class="btn submit">Send</button>
+    </form>
+
+    <p><span>Tel:</span> <a href="tel:0844 445 7123">0844 445 7123</a></p>
+    <p><span>Skype:</span> adwuk100</p>
+    <p><span>Email:</span> <a href="mailto:advice@adwuk.org">advice@adwuk.org</a></p>
   </div>
   <!-- End of site-wrap -->
 </div>

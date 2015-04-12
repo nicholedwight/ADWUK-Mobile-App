@@ -69,32 +69,32 @@
         <li>
           <a href="conversation.php">
             <div class="user_photo">
-              <img src="./assets/img/gravatar1.png" alt="CindyLou">
+              <img src="./assets/img/joe.jpg" alt="MentorJoe">
             </div>
             <p>MentorJoe</p>
           </a>
         </li>
         <li>
           <div class="user_photo">
-            <img src="./assets/img/gravatar2.png" alt="shereads">
+            <img src="./assets/img/emma.jpg" alt="MentorEmma">
           </div>
           <p>MentorEmma</p>
         </li>
         <li>
           <div class="user_photo">
-            <img src="./assets/img/wheels.png" alt="SouthWestAngel">
+            <img src="./assets/img/anna.jpg" alt="MentorAnna">
           </div>
           <p>MentorAnna</p>
         </li>
         <li>
           <div class="user_photo">
-            <img src="./assets/img/wheels.png" alt="SouthWestAngel">
+            <img src="./assets/img/bob.jpg" alt="MentorBob">
           </div>
           <p>MentorBob</p>
         </li>
         <li>
           <div class="user_photo">
-            <img src="./assets/img/wheels.png" alt="SouthWestAngel">
+            <img src="./assets/img/pete.jpg" alt="MentorPete">
           </div>
           <p>MentorPete</p>
         </li>

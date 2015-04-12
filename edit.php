@@ -60,22 +60,31 @@
     </div>
   </div>
   <div id="main" role="main" class="site-wrap">
-    <div class="saved">Changes saved!</div>
+    <?php if($_GET) { ?>
+      <div class="saved">Changes saved!</div>
+    <?php } ?>
+
     <div class="profile_settings">
       <div class="image-container">
         <img src="./assets/img/p-image.png" alt="Your Profile Image" class="profile-image">
       </div>
-      <form action="#" method="post" enctype="multipart/form-data" class="upload">
+      <!--<form action="#" method="post" enctype="multipart/form-data" class="upload">
           <span>Upload new image</span>
           <input type="file" name="fileToUpload" id="fileToUpload" class="fileUpload">
           <input type="submit" value="Upload Image" name="submit" class="upload-btn">
-      </form>
+      </form>-->
+
+      <input id="uploadFile" placeholder="Choose File" disabled="disabled" class="upload"/>
+      <div class="fileUpload btn-upload">
+          <span>Upload</span>
+          <input id="uploadBtn" type="file" class="upload" />
+      </div>
     </div>
 
     <label class="block"><input type="checkbox" name="show-profile-image"> Show my image in public forums</label>
     <label class="block"><input type="checkbox" name="show-profile-image"> Show my image to my mentor</label>
 
-    <form method="post" action="" class="profile_settings">
+    <form method="get" action="" class="profile_settings">
       <div class="field-wrapper">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" class="text-input" value="<?php echo $_SESSION['username'];?>">
@@ -106,8 +115,7 @@
         <label for="password2">Password Confirmation</label>
         <input type="password" id="password2" name="password2" class="text-input">
       </div>
-      <input type="checkbox" id="save-settings" class="save-settings" />
-      <label class="" for="save-settings"><a href="#content">Save Changes</a></label>
+      <button type="submit" class="submit btn">Save Changes</button>
     </form>
   </div>
   <!-- End of site-wrap -->

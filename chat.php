@@ -51,7 +51,7 @@
     </div>
   </header>
   <div class="content-banner">
-    <h1>Chat</h1>
+    <h1>Informal Chat</h1>
     <div class="breadcrumb">
       <ul>
         <li class="previous"><a href="home.php">Home</a></li>
@@ -67,7 +67,7 @@
     </form>
     <ul class="forum-categories">
       <li>
-        <a href="test.php">
+        <a href="thread-post.php">
           <h3>Welcome to the forum! :)</h3>
           <p>Last post by: <span class="user">nephiea</span> on <span class="post_date">Wed March 26, 2015, 13:44</p>
           <p>Replies: <strong>122</strong></p>
