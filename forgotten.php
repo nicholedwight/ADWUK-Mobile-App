@@ -12,7 +12,7 @@
       <form method="post" action="index.php" class="login-form">
         <div class="field-wrapper">
           <label for="email-recovery">Email</label>
-          <input type="email" id="email-recovery" name="email-recovery" placeholder="Email" class="text-input" required>
+          <input type="email" id="email-recovery" name="email-recovery" class="text-input" required>
         </div>
 
         <button type="submit" class="btn submit">Remind me</button>

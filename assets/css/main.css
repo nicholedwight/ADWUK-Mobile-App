@@ -52,7 +52,7 @@ ul {
 }
 
 a {
-  color: inherit;
+  color: #d4d3fb;
   text-decoration: none;
 }
 
@@ -141,6 +141,18 @@ div.profile_settings {
   font-size: 1em;
 }
 
+.range select {
+  width: 100%;
+}
+
+.find-mentor p, .range {
+  margin: 0 auto;
+}
+
+.find-mentor .block {
+  padding-left: 7px;
+}
+
 .upload {
   width: 230px;
   margin-left: 15px;
@@ -164,7 +176,7 @@ div.profile_settings {
 }
 
 .content-banner {
-  background-color: #F9EC68;
+  background-color: #FFF;
   padding: 1em;
   padding-top: 75px;
 }
@@ -180,6 +192,10 @@ div.profile_settings {
 
 .breadcrumb li {
   display: inline-block;
+}
+
+.breadcrumb a {
+  color: #c5168c;
 }
 
 .previous:after {
@@ -268,6 +284,10 @@ div.profile_settings {
 .unread {
   background-color: #e9eaed;
   background: rgba(237,239,245,.98);
+}
+
+.unread a {
+  color: #000;
 }
 
 .scrollable-notifications {
@@ -396,12 +416,6 @@ div.profile_settings {
   min-height: 100%;
 }
 
-.register-wrap p, .register-wrap label {
-  text-align: left;
-  width: 90%;
-  margin: 0 auto;
-}
-
 p.login-link {
   text-align: center;
 }
@@ -471,11 +485,6 @@ label[for="save-settings"] {
   width: 95%;
 }
 
-.register-form textarea {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .email-confirmation {
   display: none;
   z-index: 50;
@@ -523,10 +532,9 @@ label[for="save-settings"] {
   color: #384044;
   font-size: 1em;
   line-height: 1.6em;
-  border: none;
-  border-bottom: 1px solid #626262;
+  /*border-bottom: 1px solid #626262;*/
   outline: 0;
-  margin: 1em 0.4em;
+  /*margin: 1em 0.4em;*/
   padding: 0 0 1em 0;
   text-indent: 0.5em;
   transition: all 0.2s ease-out;
@@ -534,38 +542,41 @@ label[for="save-settings"] {
 }
 
 .text-input:focus,
-.text-input:active {
-  border-bottom: 1px solid #BF2786;
+.text-input:active,
+textarea:focus,
+textarea:active {
+  border: 2px solid #BF2786;
+  color: #BF2786;
 }
 
 label {
+  display: block;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 10px;
+  width: 95%;
   font-size: 1.2em;
 }
 
-.field-wrapper label {
-  position: absolute;
-  top: 3px;
-  left: 7.5%;
-  font-size: 0.9em;
-  color: #626262;
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
-  opacity: 0;
-  font-weight: bold;
+form p {
+  width: 95%;
+  text-align: left;
+  margin: 0 auto;
 }
 
-label.on {
-  color:#4481C4;
-}
-
-label.show {
-  top: -1px;
-  opacity: 1;
+.field-wrapper input,
+textarea {
+  padding: 20px;
+  width: 95%;
+  border: 2px solid #999;
+  background: transparent;
+  font-weight: 300;
 }
 
 textarea {
   height: 85px;
-  margin-top: 8px;
+  margin: 8px auto;
   resize: none;
   outline: none;
   padding: 5px;
@@ -592,10 +603,14 @@ textarea {
   color: #BF2786;
 }
 
-.register, .submit {
+.register, .submit, .find {
   background-color: #BF2786;
   color: #FFF;
   text-transform: uppercase;
+}
+
+.btn.find {
+  width: 100%;
 }
 
 .invalid-register {
@@ -615,6 +630,10 @@ textarea {
 
 .small {
   font-size: 12px;
+}
+
+form .small {
+  text-align: center;
 }
 
 .image-container {
@@ -652,6 +671,27 @@ textarea {
   margin: 0 auto;
 }
 
+.about-mentors {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.results a {
+  color: inherit;
+}
+
+.mentor-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.mentor-results .user_photo img {
+  float: none;
+}
+
 .boxed {
   border: 2px solid grey;
   padding: 1em;
@@ -666,7 +706,7 @@ a.btn {
 .btn {
   display: block;
   padding: 12px;
-  width: 295px;
+  width: 95%;
   font-size: 1.15rem;
   font-weight: 400;
   margin: 10px auto;
@@ -678,6 +718,14 @@ a.btn {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.mentor-btn {
+  background-color: #BF2786;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .fileUpload::-webkit-file-upload-button {

@@ -37,7 +37,7 @@
       </li>
       <li class="nav-item"><a href="home.php">Home</a></li>
       <li class="nav-item"><a href="forum.php">Forum</a></li>
-      <li class="nav-item"><a href="#">Mentor</a></li>
+      <li class="nav-item"><a href="mentoring.php">Mentor</a></li>
       <li class="nav-item">
         <a href="messages.php">
           Messages

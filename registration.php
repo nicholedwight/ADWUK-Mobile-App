@@ -9,15 +9,15 @@
       <form method="post" action="confirmation.php" class="register-form" name="registration">
         <div class="field-wrapper">
           <label for="fname">First Name (required)</label>
-          <input type="text" id="fname" name="fname" placeholder="First Name (required)" class="text-input reg-required" required>
+          <input type="text" id="fname" name="fname" class="text-input reg-required" required>
         </div>
         <div class="field-wrapper">
           <label for="lname">Last Name (required)</label>
-          <input type="text" id="lname" name="lname" placeholder="Last Name (required)" class="text-input reg-required" required>
+          <input type="text" id="lname" name="lname" class="text-input reg-required" required>
         </div>
         <div class="field-wrapper">
           <label for="username">Username (required)</label>
-          <input type="text" id="username" name="username" placeholder="Username (required)" class="text-input reg-required" required>
+          <input type="text" id="username" name="username" class="text-input reg-required" required>
         </div>
           <p>Do you have an impairment? (optional)</p>
           <label>
@@ -36,18 +36,18 @@
           </label>
 
           <p>If you do have an impairment, tell us a little about it so we can try to match you with your perfect mentor.</p>
-          <textarea id="about-impairment" placeholder="Describe your impairment"></textarea>
+          <textarea id="about-impairment"></textarea>
         <div class="field-wrapper">
           <label for="email-reg">Email (required)</label>
-          <input type="email" id="email-reg" name="email" rows="10" cols="40" placeholder="Email (required)" class="text-input reg-required" required>
+          <input type="email" id="email-reg" name="email" rows="10" cols="40" class="text-input reg-required" required>
         </div>
         <div class="field-wrapper">
           <label for="password">Password (required)</label>
-          <input type="password" id="password" name="password" placeholder="Password (required)" class="text-input reg-required" required>
+          <input type="password" id="password" name="password" class="text-input reg-required" required>
         </div>
         <div class="field-wrapper">
           <label for="password2">Password Confirmation (required)</label>
-          <input type="password" id="password2" name="password2" placeholder="Password Confirmation (required)" class="text-input reg-required" required>
+          <input type="password" id="password2" name="password2" class="text-input reg-required" required>
         </div>
         <button type="submit" class="register btn" id="register-btn">Register</button>
         <?php $email = $_POST['email'];?>

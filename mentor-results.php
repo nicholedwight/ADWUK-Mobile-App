@@ -51,58 +51,54 @@
     </div>
   </header>
   <div class="content-banner">
-    <h1>Accessibility Settings</h1>
+    <h1>Your Mentor Results</h1>
     <div class="breadcrumb">
       <ul>
         <li class="previous"><a href="home.php">Home</a></li>
-        <li>Accessibility Settings</li>
+        <li class="previous"><a href="mentoring.php">Mentoring</a></li>
+        <li class="previous"><a href="find.php">Find a Mentor</a></li>
+        <li>Mentor Results</li>
       </ul>
     </div>
   </div>
-  <div id="main" role="main" class="site-wrap">
-    <p>This page allows you to personalise and change some settings to make our website suit your needs. You can edit the font size, colour preferences and overlays, and find some text-to-speech software. Should you wish to return to the standard settings, use the 'Reset' button at the bottom.</p>
-
-    <div class="boxed">
-      <form method="post" action="#" class="user_settings">
-        <h2>Choose your text preferences</h2>
-        <div class="text-preferences">
-          <label for="size">Text size</label>
-          <select name="size" id="size">
-            <option>Standard</option>
-            <option>+1</option>
-            <option>+2</option>
-            <option>+3</option>
-          </select>
-        </div>
-
-        <div class="text-preferences">
-          <label for="spacing">Letter spacing</label>
-          <select name="spacing" id="spacing">
-            <option value="standard">Standard</option>
-            <option value="1">+1</option>
-            <option value="2">+2</option>
-            <option value="3">+3</option>
-          </select>
-        </div>
-
-        <h2>Choose your colour contrast preferences</h2>
-        <label class="colour-pref">
-          <input type="radio" name="colourScheme" checked="checked">
-          <span>Standard</span>
-        </label>
-
-        <label class="high_contrast colour-pref">
-          <input type="radio" name="colourScheme">
-          <span>High Contrast</span>
-        </label>
-
-        <label class="cream colour-pref">
-          <input type="radio" name="colourScheme">
-          <span>Cream</span>
-        </label>
-        <input type="submit" value="Use these settings" class="btn">
-        <input type="submit" value="Reset settings" class="btn">
-      </form>
+  <div id="main" role="main" class="forum-wrap">
+    <div class="results">
+      <p class="results-header">Here are some potential mentors that match your requirements, get to know them all by their profile before choosing!</p>
+      <hr />
+      <ul class="contacts mentor-results">
+        <li>
+          <a href="conversation.php">
+            <div class="user_photo">
+              <img src="./assets/img/gravatar1.png" alt="CindyLou">
+            </div>
+            <p>MentorJoe</p>
+          </a>
+        </li>
+        <li>
+          <div class="user_photo">
+            <img src="./assets/img/gravatar2.png" alt="shereads">
+          </div>
+          <p>MentorEmma</p>
+        </li>
+        <li>
+          <div class="user_photo">
+            <img src="./assets/img/wheels.png" alt="SouthWestAngel">
+          </div>
+          <p>MentorAnna</p>
+        </li>
+        <li>
+          <div class="user_photo">
+            <img src="./assets/img/wheels.png" alt="SouthWestAngel">
+          </div>
+          <p>MentorBob</p>
+        </li>
+        <li>
+          <div class="user_photo">
+            <img src="./assets/img/wheels.png" alt="SouthWestAngel">
+          </div>
+          <p>MentorPete</p>
+        </li>
+      </ul>
     </div>
   </div>
   <!-- End of site-wrap -->

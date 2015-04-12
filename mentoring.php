@@ -1,5 +1,5 @@
 <?php include('inc/header.php');?>
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<input type="checkbox" id="nav-trigger" class="nav-trigger" tabindex="0"/>
 <label for="nav-trigger" onclick=""><span class="visually-hidden">Menu</span></label>
 <div class="wrapper" id="top" tabindex="0">
   <header class="header">
@@ -50,60 +50,29 @@
       </div>
     </div>
   </header>
+
   <div class="content-banner">
-    <h1>Accessibility Settings</h1>
+    <h1>Mentoring</h1>
     <div class="breadcrumb">
       <ul>
         <li class="previous"><a href="home.php">Home</a></li>
-        <li>Accessibility Settings</li>
+        <li>Mentoring</li>
       </ul>
     </div>
   </div>
-  <div id="main" role="main" class="site-wrap">
-    <p>This page allows you to personalise and change some settings to make our website suit your needs. You can edit the font size, colour preferences and overlays, and find some text-to-speech software. Should you wish to return to the standard settings, use the 'Reset' button at the bottom.</p>
 
-    <div class="boxed">
-      <form method="post" action="#" class="user_settings">
-        <h2>Choose your text preferences</h2>
-        <div class="text-preferences">
-          <label for="size">Text size</label>
-          <select name="size" id="size">
-            <option>Standard</option>
-            <option>+1</option>
-            <option>+2</option>
-            <option>+3</option>
-          </select>
-        </div>
+  <div id="main" role="main" class="forum-wrap">
+    <p class="about-mentors">
+      Our mentors are certified core members of our team here at ADWUK. They're here to help guide you through the ADWUK app and to be your personal friend in times of need. They're here for you throughout your journey, whatever it may be.
+    </p>
+    <a href="find.php" class="btn mentor-btn">
+      <h2>Find a Mentor</h2>
+    </a>
 
-        <div class="text-preferences">
-          <label for="spacing">Letter spacing</label>
-          <select name="spacing" id="spacing">
-            <option value="standard">Standard</option>
-            <option value="1">+1</option>
-            <option value="2">+2</option>
-            <option value="3">+3</option>
-          </select>
-        </div>
+    <a href="apply.php" class="btn mentor-btn">
+      <h2>Apply to become a Mentor</h2>
+    </a>
 
-        <h2>Choose your colour contrast preferences</h2>
-        <label class="colour-pref">
-          <input type="radio" name="colourScheme" checked="checked">
-          <span>Standard</span>
-        </label>
-
-        <label class="high_contrast colour-pref">
-          <input type="radio" name="colourScheme">
-          <span>High Contrast</span>
-        </label>
-
-        <label class="cream colour-pref">
-          <input type="radio" name="colourScheme">
-          <span>Cream</span>
-        </label>
-        <input type="submit" value="Use these settings" class="btn">
-        <input type="submit" value="Reset settings" class="btn">
-      </form>
-    </div>
   </div>
   <!-- End of site-wrap -->
 </div>
