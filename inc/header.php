@@ -5,7 +5,7 @@
   $url = $_SERVER['REQUEST_URI'];
   $parts = explode('/', $url);
   $value = $parts[count($parts) - 1];
-  if (!isset($_SESSION['username']) && ($value != 'index.php' && $value != 'registration.php')) {
+  if (!isset($_SESSION['username']) && ($value != 'index.php' && $value != 'registration.php' && $value != 'forgotten.php')) {
     header('Location: http://localhost:8888/adwuk/index.php');
   }
   if ($_POST['email']) {
@@ -48,6 +48,6 @@
       </li>
       <li class="nav-item"><a href="accessibility.php">Accessibility</a></li>
       <li class="nav-item"><a href="#">Contact ADWUK</a></li>
-      <li class="nav-item"><a href="index.php">Sign Out</a></li>
+      <li class="nav-item"><a href="logout.php">Sign Out</a></li>
     </ul>
   </nav>
