@@ -131,7 +131,7 @@
     <div class="flex-inline">
       <form method="get" action="#" class="textarea">
         <textarea rows="10" cols="40" placeholder="Write a message..." class="message"></textarea>
-        <button type="submit" class="send">Send</button>
+        <button type="submit" class="btn send-btn">Send</button>
       </form>
     </div>
   </div>

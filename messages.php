@@ -72,7 +72,7 @@
               <div class="im_message_body">
                 <p href="#" class="author">CindyLou</p>
                 <div class="im_message_text">
-                  Lorem ipsum dolor sit amet, in dolorum voluptatum...
+                  Lorem ipsum dolor sit amet, in dolorum voluptatum nec...
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <div class="im_message_wrap">
             <div class="im_content_message_wrap">
               <a href="#" class="user_photo">
@@ -102,7 +102,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <div class="im_message_wrap">
             <div class="im_content_message_wrap">
               <a href="#" class="user_photo">
@@ -114,7 +114,7 @@
               <div class="im_message_body">
                 <p href="#" class="author">SouthWestAngel</p>
                 <div class="im_message_text">
-                  Lorem ipsum dolor sit amet, in dolorum voluptatum...
+                  Lorem ipsum dolor sit amet, in dolorum voluptatum nec, summo dolor suavitate eu nam...
                 </div>
               </div>
             </div>

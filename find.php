@@ -61,7 +61,7 @@
     </div>
   </div>
   <div id="main" role="main" class="site-wrap">
-    <p>Please fill out this form in order to find your perfect match in a mentor. Choose your preferences you'd like to see in a mentor.</p>
+    <p>Choose your preferences you'd like to see in a mentor.</p>
     <form method="post" action="mentor-results.php" class="profile_settings find-mentor">
       <p>Do you have a preference in gender for your mentor?</p>
       <label class="block">
@@ -83,9 +83,8 @@
         <input type="radio" name="mentor-gender">
         <span>Other</span>
       </label>
-      <p>If you chose other, please specify and we will try our best!</p>
       <div class="field-wrapper">
-        <label for="other-gender">Mentor's gender preference (optional)</label>
+        <label for="other-gender" class="other-gender">If you chose other, please specify and we will try our best!</label>
         <input type="text" name="other-gender" class="text-input">
       </div>
 
@@ -120,8 +119,9 @@
 
       <p>Is there a specific career area you would like your mentor to have knowledge or experience with?</p>
       <div class="text-preferences range">
-        <label for="age">Industry area (required)</label>
+        <label for="age">Industry area</label>
         <select name="age" id="age" required>
+          <option value="No Preferenes">No Preference</option>
           <option value="Accountancy">Accountancy</option>
           <option value="Administration">Administration</option>
           <option value="Agriculture">Agriculture</option>
@@ -145,7 +145,6 @@
           <option value="IT">Information Technology</option>
           <option value="Legal">Legal</option>
           <option value="Marketing">Marketing</option>
-          <option value="No Preferenes">No Preference</option>
         </select>
       </div>
 

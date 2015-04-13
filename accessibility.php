@@ -61,17 +61,17 @@
   </div>
   <div id="main" role="main" class="site-wrap">
     <?php if($_GET['Save']) { ?>
-      <div class="saved recover">Settings have been saved!</div>
+      <div class="saved access-saved">Settings have been saved!</div>
     <?php } ?>
     <?php if($_GET['Reset']) { ?>
-      <div class="saved recover">Settings reset!</div>
+      <div class="saved access-saved">Settings reset!</div>
     <?php } ?>
     <p>This page allows you to personalise and change some settings to make our website suit your needs. You can edit the font size, colour preferences and overlays, and find some text-to-speech software. Should you wish to return to the standard settings, use the 'Reset' button at the bottom.</p>
 
     <div class="boxed">
       <form method="get" action="#" class="user_settings">
         <h2>Choose your text preferences</h2>
-        <div class="text-preferences">
+        <div class="text-preferences range">
           <label for="size">Text size</label>
           <select name="size" id="size">
             <option>Standard</option>
@@ -81,7 +81,7 @@
           </select>
         </div>
 
-        <div class="text-preferences">
+        <div class="text-preferences range">
           <label for="spacing">Letter spacing</label>
           <select name="spacing" id="spacing">
             <option value="standard">Standard</option>

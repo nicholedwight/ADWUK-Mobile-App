@@ -68,15 +68,16 @@
       <div class="image-container">
         <img src="./assets/img/p-image.png" alt="Your Profile Image" class="profile-image">
       </div>
-
-      <input id="uploadFile" placeholder="Choose File" disabled="disabled" class="upload"/>
-      <div class="fileUpload btn-upload">
-          <span>Upload</span>
-          <input id="uploadBtn" type="file" class="upload" />
+      <div class="upload-container">
+        <input id="uploadFile" placeholder="Choose File" disabled="disabled" class="upload"/>
+        <div class="fileUpload btn-upload">
+            <span>Upload</span>
+            <input id="uploadBtn" type="file" class="upload" />
+        </div>
       </div>
     </div>
 
-    <label class="block"><input type="checkbox" name="show-profile-image"> Show my image in public forums</label>
+    <label class="block"><input type="checkbox" name="show-profile-image"> Show my image in forums</label>
     <label class="block"><input type="checkbox" name="show-profile-image"> Show my image to my mentor</label>
 
     <form method="get" action="" class="profile_settings">

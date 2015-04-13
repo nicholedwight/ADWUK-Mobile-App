@@ -153,8 +153,13 @@ form.profile_settings {
 }
 
 div.profile_settings {
-  width: 95%;
+  width: 100%;
   text-align: center;
+}
+
+.user_settings h2 {
+  margin: 10px auto;
+  width: 95%;
 }
 
 .text-preferences select {
@@ -177,8 +182,12 @@ div.profile_settings {
   text-align: center;
 }
 
+.range label {
+  margin: 5px 0;
+}
+
 .find-mentor .block {
-  padding-left: 7px;
+  /*padding-left: 7px;*/
 }
 
 .bullets {
@@ -218,7 +227,8 @@ div.profile_settings {
   display: inline-block;
 }
 
-.breadcrumb a {
+.breadcrumb a,
+.construction a {
   color: #c5168c;
 }
 
@@ -227,7 +237,8 @@ div.profile_settings {
   padding: 0 5px;
 }
 
-.previous a, .confirmation a {
+.previous a, .confirmation a,
+.construction a {
   text-decoration: underline;
 }
 
@@ -252,8 +263,9 @@ div.profile_settings {
   content: '\e808';
   font-size: 2em;
   position: absolute;
-  right: 6%;
-  top: 22%;
+  right: 4%;
+  top: 11%;
+  padding: 10px;
 }
 
 .active-action {
@@ -280,10 +292,10 @@ div.profile_settings {
   -webkit-border-top-right-radius: 3px;
   padding: 8px 8px 6px 8px;
   position: fixed;
-  width: 100%;
   z-index: 100;
   text-align: left;
   font-size: 1.4em;
+  width: 95%;
 }
 
 .notification-flyout:after, .notification-flyout:before {
@@ -468,17 +480,17 @@ p.login-link {
 /* Hamburger Icon */
 label[for="nav-trigger"] {
   position: fixed;
-  left: 15px;
-  top: 3px;
+  left: 0;
+  top: 0;
   z-index: 30;
   height: 30px;
   width: 30px;
   cursor: pointer;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
-  background-size: contain;
+  background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 30px 0;
+  padding: 35px 30px;
 }
 
 /* Make the Navigation Magic Happen */
@@ -536,6 +548,10 @@ label[for="save-settings"] {
   text-align: center;
 }
 
+.contact-form label {
+  margin-top: 10px;
+}
+
 .comment-form {
   margin-top: 20px;
 }
@@ -554,7 +570,7 @@ label[for="save-settings"] {
 
 .confirm {
   background: #FFF;
-  margin-top: 50%;
+  margin-top: 30%;
   padding: 20px;
   font-size: 1.5em;
 }
@@ -580,6 +596,11 @@ label[for="save-settings"] {
   position: relative;
 }
 
+.other-gender {
+  margin: 5px auto;
+  text-indent: 0;
+}
+
 .text-input {
   width: 90%;
   margin: 10px auto;
@@ -587,9 +608,7 @@ label[for="save-settings"] {
   color: #384044;
   font-size: 1em;
   line-height: 1.6em;
-  /*border-bottom: 1px solid #626262;*/
   outline: 0;
-  /*margin: 1em 0.4em;*/
   padding: 0 0 1em 0;
   text-indent: 0.5em;
   transition: all 0.2s ease-out;
@@ -634,7 +653,7 @@ textarea {
   margin: 8px auto;
   resize: none;
   outline: none;
-  padding: 5px 15px;
+  padding: 10px 15px;
   overflow-y: auto;
   font-size: 1em;
 }
@@ -684,7 +703,7 @@ textarea {
 
 .quote-user {
   float: right;
-  margin: 0 5px 0 0;
+  margin: -1px 5px 0 0;
 }
 
 blockquote {
@@ -709,10 +728,16 @@ blockquote {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.access-saved {
+  width: 100%;
 }
 
 .recover {
-  width: 80%;
+  width: 89%;
   margin: 10px auto;
 }
 
@@ -738,7 +763,7 @@ blockquote {
 
 .post .small {
   display: block;
-  margin: -15px 0 0 55px;
+  margin: -5px 0 0 55px;
   color: #444;
 }
 
@@ -792,7 +817,7 @@ form .small {
 }
 
 .about-mentors {
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -876,6 +901,11 @@ a.btn {
   margin: 0 auto;
 }
 
+.upload-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .fileUpload {
 	position: relative;
 	overflow: hidden;
@@ -901,6 +931,7 @@ a.btn {
   border: 1px solid #D8D8D8;
   font-family: inherit;
   line-height: 16px;
+  width: 70%;
 }
 
 .btn-upload {
@@ -1034,6 +1065,10 @@ input[type="radio"] {
   margin-top: 15px;
 }
 
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
 .block {
   display: block;
 }
@@ -1104,6 +1139,8 @@ input[type="radio"] {
 
 .message-list li {
   padding: 10px 0;
+  max-height: 140px;
+  min-height: 130px;
 }
 
 .im_message_wrap {
@@ -1115,6 +1152,7 @@ input[type="radio"] {
 
 .im_content_message_wrap {
   margin: 8px 8px;
+  padding-top: 5px;
 }
 
 .user_photo img {
@@ -1127,6 +1165,10 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+.post .user_photo img {
+  margin: 0 15px 0 10px;
+}
+
 .sent-time {
   float: right;
   text-align: right;
@@ -1135,12 +1177,15 @@ input[type="radio"] {
 
 .im_message_body {
   display: block;
-  overflow: hidden;
+}
+
+.post .im_message_body {
+  overflow: none;
 }
 
 .author {
-  padding: 0 0 10px 0;
-  margin: 1px 0 4px;
+  padding: 0 0 5px 0;
+  margin: 1px 0;
   display: inline-block;
   cursor: pointer;
   color: blue;
@@ -1149,6 +1194,16 @@ input[type="radio"] {
 .im_message_text {
   word-wrap: break-word;
   line-height: 150%;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.message-wrap .im_message_text {
+  word-wrap: break-word;
+  line-height: 150%;
+  text-align: left;
+  margin-left: 55px;
+  margin-top: 5px;
 }
 
 .unread {
@@ -1158,14 +1213,35 @@ input[type="radio"] {
 .textarea {
   font-family: 'Helvetica';
   background: #E7E7E7;
-  height: 87px;
+  height: 93px;
 }
 
 .message {
   background: #E7E7E7;
   border-color: #E7E7E7;
   font-size: 14px;
-  width: 80%;
+  width: 70%;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.message:focus,
+.message:active {
+  border: none;
+  outline: none;
+}
+
+.send-btn {
+  vertical-align: top;
+  display: inline-block;
+  padding: 35px 5px;
+  margin: 1px auto;
+  width: 19%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #BF2786;
+  color: #FFF;
 }
 
 .bottom-sticky {
@@ -1209,4 +1285,10 @@ input[type="radio"] {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.construction {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
 }

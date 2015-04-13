@@ -58,27 +58,35 @@
     <h2>Updates from popular topics:</h2>
     <ul class="forum-categories">
       <li>
-        <h3>Anyone in Bedminster</h3>
-        <p>Last post by: <span class="user">CindyLou</span> on <span class="post_date"><?php echo $date;?>, 12:04</p>
-        <p>Replies: <strong>23</strong></p>
+        <a href="thread-post.php">
+          <h3>Welcome to the forum! :)</h3>
+          <p>Last post by: <span class="user">nephiea</span> on <span class="post_date"><?php echo $date;?>, 12:04</p>
+          <p>Replies: <strong>23</strong></p>
+        </a>
       </li>
 
       <li>
-        <h3>Disussing emplyoment rights in an interview?</h3>
-        <p>Last post by: <span class="user">MentorJoe</span> on <span class="post_date"><?php echo $date;?>, 15:42</p>
-        <p>Replies: <strong>23</strong></p>
+        <a href="404.php">
+          <h3>Disussing emplyoment rights in an interview?</h3>
+          <p>Last post by: <span class="user">MentorJoe</span> on <span class="post_date"><?php echo $date;?>, 15:42</p>
+          <p>Replies: <strong>23</strong></p>
+        </a>
       </li>
 
       <li>
-        <h3>Wheelchair friendly companies in Bristol?</h3>
-        <p>Last post by: <span class="user">SouthWestAngel</span> on <span class="post_date"><?php echo $yesterday;?>, 09:12</p>
-        <p>Replies: <strong>23</strong></p>
+        <a href="404.php">
+          <h3>Wheelchair friendly companies in Bristol?</h3>
+          <p>Last post by: <span class="user">SouthWestAngel</span> on <span class="post_date"><?php echo $yesterday;?>, 09:12</p>
+          <p>Replies: <strong>23</strong></p>
+        </a>
       </li>
 
       <li>
-        <h3>Dyslexia in tech</h3>
-        <p>Last post by: <span class="user">shereads</span> on <span class="post_date">Sun Apr 26, 2015, 20:56</p>
-        <p>Replies: <strong>23</strong></p>
+        <a href="404.php">
+          <h3>Dyslexia in tech</h3>
+          <p>Last post by: <span class="user">shereads</span> on <span class="post_date">Sun Apr 26, 2015, 20:56</p>
+          <p>Replies: <strong>23</strong></p>
+        </a>
       </li>
 
     </ul>
