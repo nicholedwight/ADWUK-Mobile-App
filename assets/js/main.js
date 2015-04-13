@@ -1,3 +1,7 @@
+window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);
+
 $(document).ready(function () {
   $('.nav-item a').tabindex = -1;
   $('.nav-trigger').focus($('.nav-item a').tabindex = 0);

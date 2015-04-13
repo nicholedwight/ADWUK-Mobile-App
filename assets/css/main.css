@@ -585,6 +585,7 @@ label[for="save-settings"] {
 
 .cancel {
   background: #e74c3c;
+  color: #000;
 }
 
 #email-check {

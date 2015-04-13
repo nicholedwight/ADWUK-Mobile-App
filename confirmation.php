@@ -55,7 +55,6 @@
     <div class="breadcrumb">
       <ul>
         <li class="previous"><a href="home.php">Home</a></li>
-        <li class="previous"><a href="edit.php">Edit Profile</a></li>
         <li>Registration Complete</li>
       </ul>
     </div>
