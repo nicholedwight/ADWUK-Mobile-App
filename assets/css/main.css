@@ -1248,6 +1248,7 @@ input[type="checkbox"] {
   position: absolute;
   bottom: 0;
   overflow: hidden;
+  width: 100%;
 }
 
 .send, .sendNew {
@@ -1288,7 +1289,7 @@ input[type="checkbox"] {
 }
 
 .construction {
-  height: 100%;
+  min-height: 100%;
   padding-top: 150px;
   text-align: center;
 }

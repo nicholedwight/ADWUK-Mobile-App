@@ -106,7 +106,7 @@
           <input type="radio" name="colourScheme">
           <span>Cream</span>
         </label>
-        <button type="submit" name="Save" value="save" class="btn">Use these settings</button>
+        <button type="submit" name="Save" value="save" class="btn submit">Use these settings</button>
         <button type="submit" name="Reset" value="reset" class="btn">Reset settings</button>
       </form>
     </div>

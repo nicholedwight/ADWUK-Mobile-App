@@ -116,10 +116,25 @@
         </div>
       </div>
 
+      <?php if($_POST['comment']) { ?>
+        <div class="post">
+          <a href="#" class="user_photo">
+            <img src="./assets/img/p-image.png" alt="">
+          </a>
+          <p class="author"><?php echo $_SESSION['username'];?></p>
+          <img src="./assets/img/icon_post_quote.gif" alt="Quote this user" class="quote-user">
+          <span class="small"><?php echo $date . ', ' . $time;?></span>
+          <div class="im_message_body">
+            <div class="im_message_text">
+              <?php echo $_POST['comment'];?>
+            </div>
+          </div>
+        </div>
+      <?php }?>
+
       <form method="post" action="" class="comment-form">
         <label for="comment">Post Reply</label>
-        <textarea id="comment" name="comment"></textarea>
-
+        <textarea id="comment" name="comment" required></textarea>
         <button type="submit" class="btn submit">Submit</button>
       </form>
     </div>

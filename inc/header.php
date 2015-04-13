@@ -19,6 +19,8 @@
       $username = $parts[0];
       $_SESSION['username'] = $username;
   }
+  date_default_timezone_set('Europe/London');
+  $time = date('h:i', time());
   // var_dump($_SESSION);
 ?>
 <!DOCTYPE html>

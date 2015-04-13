@@ -1,8 +1,6 @@
 <?php include('inc/header.php');
       $searchName = $_GET['searchName'];
       $text = $_GET['text'];
-      date_default_timezone_set('Europe/London');
-      $time = date('h:i', time());
 ?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
 <label for="nav-trigger" onclick=""><span class="visually-hidden">Menu</span></label>
@@ -92,7 +90,7 @@
       <form method="get" action="#" class="textarea">
         <textarea rows="10" cols="40" placeholder="Write a message..." class="message" name="text"></textarea>
         <input type="hidden" value="<?php echo $searchName; ?>" name="searchName">
-        <button type="submit" class="sendNew">Send</button>
+        <button type="submit" class="btn send-btn">Send</button>
       </form>
     </div>
   </div>
