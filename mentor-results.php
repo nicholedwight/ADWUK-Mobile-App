@@ -67,34 +67,44 @@
       <hr />
       <ul class="contacts mentor-results">
         <li>
-          <div class="user_photo">
-            <img src="./assets/img/joe.jpg" alt="MentorJoe">
-          </div>
-          <p>MentorJoe</p>
+          <a href="#">
+            <div class="user_photo">
+              <img src="./assets/img/joe.jpg" alt="MentorJoe">
+            </div>
+            <p>MentorJoe</p>
+          </a>
         </li>
         <li>
-          <div class="user_photo">
-            <img src="./assets/img/emma.jpg" alt="MentorEmma">
-          </div>
-          <p>MentorEmma</p>
+          <a href="#">
+            <div class="user_photo">
+              <img src="./assets/img/emma.jpg" alt="MentorEmma">
+            </div>
+            <p>MentorEmma</p>
+          </a>
         </li>
         <li>
-          <div class="user_photo">
-            <img src="./assets/img/anna.jpg" alt="MentorAnna">
-          </div>
-          <p>MentorAnna</p>
+          <a href="#">
+            <div class="user_photo">
+              <img src="./assets/img/anna.jpg" alt="MentorAnna">
+            </div>
+            <p>MentorAnna</p>
+          </a>
         </li>
         <li>
-          <div class="user_photo">
-            <img src="./assets/img/bob.jpg" alt="MentorBob">
-          </div>
-          <p>MentorBob</p>
+          <a href="#">
+            <div class="user_photo">
+              <img src="./assets/img/bob.jpg" alt="MentorBob">
+            </div>
+            <p>MentorBob</p>
+          </a>
         </li>
         <li>
-          <div class="user_photo">
-            <img src="./assets/img/pete.jpg" alt="MentorPete">
-          </div>
-          <p>MentorPete</p>
+          <a href="#">
+            <div class="user_photo">
+              <img src="./assets/img/pete.jpg" alt="MentorPete">
+            </div>
+            <p>MentorPete</p>
+          </a>
         </li>
       </ul>
     </div>

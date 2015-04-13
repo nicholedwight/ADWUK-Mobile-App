@@ -1,5 +1,5 @@
 <?php
-include('inc/header.php');
+include('inc/no-nav.php');
 session_destroy();
 ?>
   <div id="main" role="main" class="site-wrap landing">

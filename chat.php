@@ -75,7 +75,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <h3>Dyslexia at work</h3>
           <p>Last post by: <span class="user">MentorJoe</span> on <span class="post_date">Thu April 2, 2015, 09:27</p>
           <p>Replies: <strong>17</strong></p>
@@ -83,7 +83,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <h3>New here!</h3>
           <p>Last post by: <span class="user">anonymous1986</span> on <span class="post_date">Fri March 27, 2015, 16:58</p>
           <p>Replies: <strong>8</strong></p>
@@ -91,7 +91,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <h3>Looking for work</h3>
           <p>Last post by: <span class="user">nikolipupzki</span> on <span class="post_date">Mon Apr 6, 2015, 17:41</p>
           <p>Replies: <strong>2</strong></p>
@@ -99,7 +99,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <h3>Forumn Names</h3>
           <p>Last post by: <span class="user">MentorJoe</span> on <span class="post_date">Sun Apr 5, 2015, 10:21</p>
           <p>Replies: <strong>18</strong></p>
@@ -107,7 +107,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <h3>Anyone in Bedminster</h3>
           <p>Last post by: <span class="user">CindyLou</span> on <span class="post_date">Fri Apr 10, 2015, 12:04</p>
           <p>Replies: <strong>23</strong></p>

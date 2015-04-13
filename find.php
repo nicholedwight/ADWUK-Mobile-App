@@ -1,7 +1,7 @@
 <?php include('inc/header.php');?>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
 <label for="nav-trigger" onclick=""><span class="visually-hidden">Menu</span></label>
-<div class="wrapper" id="content">
+<div class="wrapper" id="top" tabindex="0">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
     <span class="notifications">
@@ -51,7 +51,7 @@
     </div>
   </header>
   <div class="content-banner">
-    <h1>Edit Profile</h1>
+    <h1>Find a Mentor</h1>
     <div class="breadcrumb">
       <ul>
         <li class="previous"><a href="home.php">Home</a></li>

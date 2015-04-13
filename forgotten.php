@@ -1,4 +1,4 @@
-<?php include('inc/header.php');?>
+<?php include('inc/no-nav.php');?>
   <div id="main" role="main" class="site-wrap landing">
     <div class="login-container">
       <div class="landing-header">

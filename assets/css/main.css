@@ -52,7 +52,7 @@ ul {
 }
 
 a {
-  color: #d4d3fb;
+  color: #BF2786;
   text-decoration: none;
 }
 
@@ -1005,7 +1005,6 @@ a.btn {
 }
 
 .pagination ul {
-  background: #d6dbdf;
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -1047,7 +1046,6 @@ a.btn {
 .pagination ul li > a {
   display: inline-block;
   background: #ffffff;
-  border: 5px solid #d6dbdf;
   color: #000;
   text-decoration: none;
   font-size: 14px;
@@ -1075,6 +1073,10 @@ input[type="checkbox"] {
 
 .contacts li {
   padding: 10px 15px;
+}
+
+.contacts a {
+  color: inherit;
 }
 
 .frequent {
@@ -1188,7 +1190,6 @@ input[type="checkbox"] {
   margin: 1px 0;
   display: inline-block;
   cursor: pointer;
-  color: blue;
 }
 
 .im_message_text {

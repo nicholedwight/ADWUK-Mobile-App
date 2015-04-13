@@ -69,7 +69,7 @@
       <h2>Find a Mentor</h2>
     </a>
 
-    <a href="apply.php" class="btn mentor-btn">
+    <a href="404.php" class="btn mentor-btn">
       <h2>Apply to become a Mentor</h2>
     </a>
 

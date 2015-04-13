@@ -73,7 +73,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <h3>Employment</h3>
           <p>Support on finding a job, career progression, or if you're struggling at work</p>
           <p>Topics: <strong>11</strong></p>
@@ -81,7 +81,7 @@
       </li>
 
       <li>
-        <a href="#">
+        <a href="404.php">
           <h3>Financial Advice</h3>
           <p>For advice and questions about finances, benefits, and managing a budget. Qualified mentors will be able to assist you as well as informal advice from peers.</p>
           <p>Topics: <strong>3</strong></p>
