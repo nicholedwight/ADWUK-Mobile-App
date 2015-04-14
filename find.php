@@ -65,6 +65,11 @@
     <form method="post" action="mentor-results.php" class="profile_settings find-mentor">
       <p>Do you have a preference in gender for your mentor?</p>
       <label class="block">
+        <input type="radio" name="mentor-gender">
+        <span>No Preference</span>
+      </label>
+      
+      <label class="block">
         <input type="radio" name="mentor-gender" checked="checked">
         <span>Female</span>
       </label>
@@ -72,11 +77,6 @@
       <label class="block">
         <input type="radio" name="mentor-gender">
         <span>Male</span>
-      </label>
-
-      <label class="block">
-        <input type="radio" name="mentor-gender">
-        <span>No Preference</span>
       </label>
 
       <label class="block">
