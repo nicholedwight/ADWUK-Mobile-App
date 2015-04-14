@@ -108,7 +108,7 @@
       </label>
 
       <label class="block">
-        <input type="radio" name="mentor-gender">
+        <input type="radio" name="mentor-disability">
         <span>I don't mind</span>
       </label>
 
