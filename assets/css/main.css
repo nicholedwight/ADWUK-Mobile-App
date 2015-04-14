@@ -164,7 +164,6 @@ div.profile_settings {
 .text-preferences select {
   width: 95%;
   height: 35px;
-  border: 1px solid grey;
   margin-bottom: 15px;
   font-size: 1em;
 }
