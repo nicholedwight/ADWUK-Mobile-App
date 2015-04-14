@@ -857,6 +857,13 @@ form .small {
   max-width: 400px;
 }
 
+.left {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
 a.btn {
   text-decoration: none;
 }

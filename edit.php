@@ -65,6 +65,7 @@
     <?php } ?>
 
     <div class="profile_settings">
+      <h3 class="left">Edit your profile image</h3>
       <div class="image-container">
         <img src="./assets/img/p-image.png" alt="Your Profile Image" class="profile-image">
       </div>
