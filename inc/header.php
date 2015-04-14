@@ -7,7 +7,7 @@
   $value = $parts[count($parts) - 1];
   $removeGet = explode('?', $value);
   $newValue = $removeGet[count($removeGet) - 2];
-  if (!isset($_SESSION['username']) && ($value != 'index.php' && $value != 'forgotten.php' && $value != 'registration.php' && $newValue != 'index.php')) {
+  if (!isset($_SESSION['username'])) {
     // echo "redirec failed";
     header('Location: http://localhost:8888/adwuk/index.php');
   }
@@ -35,7 +35,7 @@
     <ul class="navigation">
       <li class="nav-item">
         <a href="edit.php" class="user_photo">
-          <img src="./assets/img/p-image.png" alt="Your Profile Image">
+          <img src="./assets/img/p-image.png" alt="">
           My Profile
           <p class="small">Edit Profile</p>
         </a>

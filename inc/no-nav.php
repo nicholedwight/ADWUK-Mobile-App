@@ -7,12 +7,6 @@
   $value = $parts[count($parts) - 1];
   $removeGet = explode('?', $value);
   $newValue = $removeGet[count($removeGet) - 2];
-  // var_dump($value);
-  // var_dump($newValue);
-  if (!isset($_SESSION['username']) && ($value != 'index.php' && $value != 'forgotten.php' && $value != 'registration.php' && $newValue != 'index.php')) {
-    // echo "redirec failed";
-    header('Location: http://localhost:8888/adwuk/index.php');
-  }
   if ($_POST['email']) {
       $email = $_POST['email'];
       $parts = explode("@", $email);
