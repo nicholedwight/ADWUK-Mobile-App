@@ -9,6 +9,9 @@ $(document).ready(function () {
     $('.wrapper').css({
     'left':'200px'
     })
+    $('.nav-trigger').css({
+      'background-image':"url('data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='white'/><rect y='24' width='30' height='6' fill='white'/><rect y='12' width='30' height='6' fill='white'/></svg>')"
+    })
   });
   $('.nav-trigger').click(function() {
     $('.wrapper').toggleClass('open');
