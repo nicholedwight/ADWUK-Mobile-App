@@ -655,6 +655,7 @@ textarea {
   padding: 10px 15px;
   overflow-y: auto;
   font-size: 1em;
+  font-family: 'vag', Helvetica, Arial, sans-serif;
 }
 
 .forum-categories li {
