@@ -7,15 +7,15 @@
   $value = $parts[count($parts) - 1];
   $removeGet = explode('?', $value);
   $newValue = $removeGet[count($removeGet) - 2];
-  if (!isset($_SESSION['username'])) {
-    // echo "redirec failed";
-    header('Location: http://localhost:8888/adwuk/index.php');
-  }
   if ($_POST['email']) {
       $email = $_POST['email'];
       $parts = explode("@", $email);
       $username = $parts[0];
       $_SESSION['username'] = $username;
+  }
+  if (!isset($_SESSION['username']) && ($value != 'index.php' && $value != 'forgotten.php' && $value != 'registration.php' && $newValue != 'index.php')) {
+    // echo "redirec failed";
+    header('Location: http://localhost:8888/adwuk/index.php');
   }
   date_default_timezone_set('Europe/London');
   $time = date('H:i', time());
