@@ -9,9 +9,9 @@ $(document).ready(function () {
     $('.wrapper').css({
     'left':'200px'
     })
-    $('.nav-trigger').css({
-      'background-image':"url('data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='white'/><rect y='24' width='30' height='6' fill='white'/><rect y='12' width='30' height='6' fill='white'/></svg>')"
-    })
+    // $('.nav-trigger').css({
+    //   'background-image', "url('data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6' fill='white'/><rect y='24' width='30' height='6' fill='white'/><rect y='12' width='30' height='6' fill='white'/></svg>')"
+    // })
   });
   $('.nav-trigger').click(function() {
     $('.wrapper').toggleClass('open');
@@ -78,6 +78,32 @@ $(document).ready(function () {
   };
 
 });
+
+function resizeText() {
+  var selectBox = document.getElementById("size");
+  var multiplier = selectBox.options[selectBox.selectedIndex].value;
+  console.log(multiplier);
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+  }
+
+  if (multiplier == '-1') {
+    document.body.style.fontSize = 1 + "em";
+    console.log(document.body.style.fontSize);
+  }
+  if (multiplier == '1') {
+    document.body.style.fontSize = parseFloat(document.body.style.fontSize) + 0.3 + "em";
+    console.log(document.body.style.fontSize);
+  }
+  if (multiplier == '2') {
+    document.body.style.fontSize = parseFloat(document.body.style.fontSize) + 0.5 + "em";
+    console.log(document.body.style.fontSize);
+  }
+  if (multiplier == '3') {
+    document.body.style.fontSize = parseFloat(document.body.style.fontSize) + 0.7 + "em";
+  }
+  // document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
 
 var substringMatcher = function(strs) {
       return function findMatches(q, cb) {

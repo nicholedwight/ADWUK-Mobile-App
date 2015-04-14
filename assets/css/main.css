@@ -33,6 +33,7 @@ h1, h2, h3, h4 {
 body {
     /* Without this, the body has excess horizontal scroll when the menu is open */
   overflow-x: hidden;
+  font-size: 1em;
 }
 
 html, body {

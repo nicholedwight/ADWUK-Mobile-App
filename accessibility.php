@@ -73,18 +73,18 @@
         <h2>Choose your text preferences</h2>
         <div class="text-preferences range">
           <label for="size">Text size</label>
-          <select name="size" id="size">
-            <option>Standard</option>
-            <option>+1</option>
-            <option>+2</option>
-            <option>+3</option>
+          <select name="size" id="size" onchange="resizeText();">
+            <option value="-1">Standard</option>
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+            <option value="3">+3</option>
           </select>
         </div>
 
         <div class="text-preferences range">
           <label for="spacing">Letter spacing</label>
           <select name="spacing" id="spacing">
-            <option value="standard">Standard</option>
+            <option value="0">Standard</option>
             <option value="1">+1</option>
             <option value="2">+2</option>
             <option value="3">+3</option>
