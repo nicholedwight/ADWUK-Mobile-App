@@ -106,14 +106,12 @@ a {
 }
 
 .visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
   width: 1px;
+  top: 25px;
+  right: 49px;
 }
 
 .mask {
@@ -243,18 +241,19 @@ div.profile_settings {
 }
 
 .header {
-  height: 70px;
-  background: #515050;
+  height: 73px;
+  background: #FFF;
   position: fixed;
   max-width: 700px;
   width: 100%;
   z-index: 20;
   text-align: center;
   color: pink;
+  border-bottom: 4px solid #BF2786;
 }
 
 .header-logo {
-  width: 155px;
+  width: 148px;
   margin: 5px 15px;
 }
 

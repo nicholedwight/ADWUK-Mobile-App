@@ -1,10 +1,10 @@
 <?php include('inc/header.php'); ?>
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" aria-role="button"/>
   <label for="nav-trigger" onclick=""><span class="visually-hidden">Menu</span></label>
 <div class="wrapper" id="top" tabindex="0">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
-    <span class="notifications">
+    <span class="notifications" tabindex="0">
       <div class="new-notification general-notification">
         2
       </div>
