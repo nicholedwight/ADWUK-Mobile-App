@@ -128,9 +128,29 @@
         </div>
       </div>
     </div>
+
+    <?php if($_POST['message']) { ?>
+      <div class="im_message_wrap">
+        <div class="im_content_message_wrap">
+          <a href="#" class="user_photo">
+            <img src="./assets/img/gravatar1.png" alt="CindyLou">
+          </a>
+          <div class="sent-time">
+            <p>17:05</p>
+          </div>
+          <div class="im_message_body">
+            <a href="#" class="author">CindyLou</a>
+            <div class="im_message_text">
+              <?php echo $_POST['message'];?>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php }?>
+
     <div class="flex-inline">
-      <form method="get" action="#" class="textarea">
-        <textarea rows="10" cols="40" placeholder="Write a message..." class="message"></textarea>
+      <form method="post" action="#" class="textarea">
+        <textarea rows="10" cols="40" placeholder="Write a message..." class="message" name="message"></textarea>
         <button type="submit" class="btn send-btn">Send</button>
       </form>
     </div>
