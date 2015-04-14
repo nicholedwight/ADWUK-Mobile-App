@@ -68,6 +68,10 @@
       We welcome your comments, feedback and queries so please do get in touch. You can use the enquiry form below or, if you would prefer to speak to a member of the team, call us on <a href="tel:0844 445 7123">0844 445 7123</a>. Our offices are open Monday to Friday between 09.00 and 16.00.
     </p>
 
+    <?php if($_POST) { ?>
+      <div class="saved">Thanks for your enquiry, we'll get back to you as soon as possible!</div>
+    <?php } ?>
+
     <form method="post" action="" class="contact-form">
       <div class="field-wrapper">
         <label for="name">Name</label>
