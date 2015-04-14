@@ -67,7 +67,7 @@
 
       <li>
         <a href="404.php">
-          <h3>Disussing emplyoment rights in an interview?</h3>
+          <h3>Discussing emplyoment rights in an interview?</h3>
           <p>Last post by: <span class="user">MentorJoe</span> on <span class="post_date"><?php echo $date;?>, 15:42</p>
           <p>Replies: <strong>23</strong></p>
         </a>
