@@ -1,5 +1,5 @@
 <?php include('inc/no-nav.php'); ?>
-<div class="wrapper" id="top" tabindex="0">
+<div class="wrapper" id="top" tabindex="0" role="banner">
   <div id="main" role="main" class="site-wrap register-wrap">
     <div class="register-container">
       <div class="landing-header">

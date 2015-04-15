@@ -1,7 +1,7 @@
 <?php include('inc/header.php'); ?>
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" aria-role="button"/>
+  <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
   <label for="nav-trigger" onclick=""><span class="visually-hidden">Menu</span></label>
-<div class="wrapper" id="top" tabindex="0">
+<div class="wrapper" id="top" tabindex="0" role="banner">
   <header class="header">
     <a href="home.php"><img src="./assets/img/adwuk-logo.png" alt="Action on Disability and Work UK" class="header-logo"></a>
     <span class="notifications" tabindex="0">
