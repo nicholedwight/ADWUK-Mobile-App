@@ -1,5 +1,5 @@
 <?php include('inc/header.php');?>
-<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" role="button"/>
 <label for="nav-trigger" onclick=""><span class="visually-hidden">Menu</span></label>
 <div class="wrapper" id="top" tabindex="0" role="banner">
   <header class="header">
@@ -133,13 +133,13 @@
       <div class="im_message_wrap">
         <div class="im_content_message_wrap">
           <a href="#" class="user_photo">
-            <img src="./assets/img/gravatar1.png" alt="CindyLou">
+            <img src="./assets/img/p-image.png" alt="">
           </a>
           <div class="sent-time">
-            <p>17:05</p>
+            <p><?php echo $time;?></p>
           </div>
           <div class="im_message_body">
-            <a href="#" class="author">CindyLou</a>
+            <a href="#" class="author"><?php echo $_SESSION['username'];?></a>
             <div class="im_message_text">
               <?php echo $_POST['message'];?>
             </div>
