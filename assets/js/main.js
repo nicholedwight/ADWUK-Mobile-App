@@ -86,27 +86,43 @@ $(document).ready(function () {
 function resizeText() {
   var selectBox = document.getElementById("size");
   var multiplier = selectBox.options[selectBox.selectedIndex].value;
-  console.log(multiplier);
   if (document.body.style.fontSize == "") {
     document.body.style.fontSize = "1.0em";
   }
 
   if (multiplier == '-1') {
     document.body.style.fontSize = 1 + "em";
-    console.log(document.body.style.fontSize);
   }
   if (multiplier == '1') {
     document.body.style.fontSize = parseFloat(document.body.style.fontSize) + 0.3 + "em";
-    console.log(document.body.style.fontSize);
   }
   if (multiplier == '2') {
     document.body.style.fontSize = parseFloat(document.body.style.fontSize) + 0.5 + "em";
-    console.log(document.body.style.fontSize);
   }
   if (multiplier == '3') {
     document.body.style.fontSize = parseFloat(document.body.style.fontSize) + 0.7 + "em";
   }
-  // document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+
+function changeSpacing() {
+  var selectBox = document.getElementById("spacing");
+  var multiplier = selectBox.options[selectBox.selectedIndex].value;
+  if (document.body.style.letterSpacing == "") {
+    document.body.style.letterSpacing = "normal";
+  }
+
+  if (multiplier == '0') {
+    document.body.style.letterSpacing = "normal";
+  }
+  if (multiplier == '1') {
+    document.body.style.letterSpacing = "1px";
+  }
+  if (multiplier == '2') {
+    document.body.style.letterSpacing = "1.5px";
+  }
+  if (multiplier == '3') {
+    document.body.style.letterSpacing = "2px";
+  }
 }
 
 var substringMatcher = function(strs) {
